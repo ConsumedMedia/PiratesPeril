@@ -66,6 +66,7 @@
     {"name":"snd_shoot","order":3,"path":"sounds/snd_shoot/snd_shoot.yy",},
     {"name":"sq_fadein","order":1,"path":"sequences/sq_fadein/sq_fadein.yy",},
     {"name":"spr_powerup_spread","order":6,"path":"sprites/spr_powerup_spread/spr_powerup_spread.yy",},
+    {"name":"Sprite32","order":32,"path":"sprites/Sprite32/Sprite32.yy",},
     {"name":"snd_pirate_shooter_loop","order":4,"path":"sounds/snd_pirate_shooter_loop/snd_pirate_shooter_loop.yy",},
     {"name":"obj_bullet","order":1,"path":"objects/obj_bullet/obj_bullet.yy",},
     {"name":"spr_boat_enemy","order":12,"path":"sprites/spr_boat_enemy/spr_boat_enemy.yy",},
