@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_coin",
-    "path": "sprites/spr_coin/spr_coin.yy",
+    "name": "spr_coin_gold",
+    "path": "sprites/spr_coin_gold/spr_coin_gold.yy",
   },
   "spriteMaskId": null,
   "visible": true,
