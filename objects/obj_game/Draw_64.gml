@@ -33,6 +33,14 @@ if instance_exists(obj_player)
 		draw_sprite_ext(spr_heart, 0, 190, 40, 1, 1, 1, c_white, 1);
 		draw_sprite_ext(spr_heart, 0, 210, 40, 1, 1, 1, c_white, 1);
 	}
+	else if player_health == 5
+	{
+		draw_sprite_ext(spr_heart, 0, 150, 40, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 170, 40, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 190, 40, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 210, 40, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 230, 40, 1, 1, 1, c_white, 1);
+	}
 	
 	//temp position place this in the main menu / menu died
 	if variable_instance_exists(id, "highscore")

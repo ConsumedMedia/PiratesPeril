@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_coin",
+  "name": "obj_coin_silver",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_coin_gold",
-    "path": "sprites/spr_coin_gold/spr_coin_gold.yy",
+    "name": "spr_coin_silver",
+    "path": "sprites/spr_coin_silver/spr_coin_silver.yy",
   },
   "spriteMaskId": null,
   "visible": true,

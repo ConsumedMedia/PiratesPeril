@@ -1,4 +1,4 @@
-/// @description player collect coin
+/// @description player collect silver coin
 
 
 instance_destroy(other);

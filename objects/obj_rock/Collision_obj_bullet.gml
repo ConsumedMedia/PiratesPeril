@@ -39,6 +39,19 @@ else if enemy_life == 0
 {
 	enemy_life = 3;
 	instance_destroy();
-	instance_create_layer(x, y, "Instances", obj_coin);
-	
+	if (obj_game.level == 1)
+	{
+		instance_create_layer(x, y, "Instances", obj_coin_silver);
+	}
+	else if (obj_game.level == 2)
+	{
+		if (random(10) >= 9)
+		{
+			instance_create_layer(x, y, "Instances", obj_coin_gold);
+		} 
+		else 
+		{	
+			instance_create_layer(x, y, "Instances", obj_coin_silver);
+		}
+	}
 }
