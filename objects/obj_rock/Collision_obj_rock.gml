@@ -1,5 +1,62 @@
-//move_bounce_all(true);
 
-image_alpha = 0.7;
-x = previous_x;
-y = previous_y;
+if (place_meeting(x, y, obj_rock)) 
+{
+	for (var i = 0; i < 1000; ++i)
+	{
+		// right
+		if (!place_meeting(x + i, y, obj_rock))
+		{
+			x += i;
+			break;
+		}
+		// left
+		if (!place_meeting(x - i, y, obj_rock))
+		{
+			x -= i;
+			break;
+		}
+		
+		// up
+		if (!place_meeting(x, y - i, obj_rock))
+		{
+			y -= i;
+			break;
+		}
+		// down
+		if (!place_meeting(x, y + i, obj_rock))
+		{
+			y += i;
+			break;
+		}
+		// top right
+		if (!place_meeting(x + i, y - i, obj_rock))
+		{
+			x += i;
+			y -= i;
+			break;
+		}
+		// top left
+		if (!place_meeting(x - i, y - i, obj_rock))
+		{
+			x -= i;
+			y -= i;
+			break;
+		}
+		// bottom right
+		if (!place_meeting(x + i, y + i, obj_rock))
+		{
+			x += i;
+			y += i;
+			break;
+		}
+		
+		// bottom left
+		if (!place_meeting(x - i, y + i, obj_rock))
+		{
+			x -= i;
+			y += i;
+			break;
+		}
+	}
+		
+}

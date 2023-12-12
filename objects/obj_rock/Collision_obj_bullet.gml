@@ -40,5 +40,5 @@ else if enemy_life == 0
 	enemy_life = 3;
 	instance_destroy();
 	instance_create_layer(x, y, "Instances", obj_coin);
-	//alarm[1] = 5 * 60;
+	
 }
