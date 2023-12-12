@@ -5,28 +5,90 @@
 if keyboard_check(vk_up) || keyboard_check(ord("W")) || gamepad_button_check(0, gp_padu)
 {
 	motion_add(image_angle, 0.03);
-	stopped = false;
 }
 
 if keyboard_check(vk_down) || keyboard_check(ord("S")) || gamepad_button_check(0, gp_padd)
 {
 	motion_add(image_angle, -0.03);
-	stopped = false;
+	
 }
 
 if keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(0, gp_padl)
 {
 	image_angle += 4;
-	stopped = false;
+	
 }
 
 if keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(0, gp_padr)
 {
 	image_angle -= 4;
-	stopped = false;
+
 }
 
-move_wrap(true, true, 0);
+
+if (place_meeting(x, y, obj_wall)) 
+{
+	for (var i = 0; i < 1000; ++i)
+	{
+		// right
+		if (!place_meeting(x + i, y, obj_wall))
+		{
+			x += i;
+			break;
+		}
+		// left
+		if (!place_meeting(x - i, y, obj_wall))
+		{
+			x -= i;
+			break;
+		}
+		
+		// up
+		if (!place_meeting(x, y - i, obj_wall))
+		{
+			y -= i;
+			break;
+		}
+		// down
+		if (!place_meeting(x, y + i, obj_wall))
+		{
+			y += i;
+			break;
+		}
+		// top right
+		if (!place_meeting(x + i, y - i, obj_wall))
+		{
+			x += i;
+			y -= i;
+			break;
+		}
+		// top left
+		if (!place_meeting(x - i, y - i, obj_wall))
+		{
+			x -= i;
+			y -= i;
+			break;
+		}
+		// bottom right
+		if (!place_meeting(x + i, y + i, obj_wall))
+		{
+			x += i;
+			y += i;
+			break;
+		}
+		
+		// bottom left
+		if (!place_meeting(x - i, y + i, obj_wall))
+		{
+			x -= i;
+			y += i;
+			break;
+		}
+	}
+		
+}
+
+
 
 // fire cannon
 if mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1)
