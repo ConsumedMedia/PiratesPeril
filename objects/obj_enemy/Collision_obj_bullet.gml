@@ -19,14 +19,14 @@ direction = random(360);
 //if sprite_index == spr_boat_enemy && image_index != 2
 if enemy_life == 2
 {
-	sprite_index = spr_boat_enemy2;
+	sprite_index = spr_boat_enemy1_2;
 	//image_index = 2;
 	enemy_life -= 1;
 	
 //	instance_copy(true);
 }
 
-//else if instance_number(obj_rock) < 12
+//else if instance_number(obj_enemy) < 12
 
 //{
 //	sprite_index = spr_boat_enemy1;
