@@ -6,7 +6,7 @@ player_health = 3;
 highscore = 0;
 global.points = highscore;
 level = 1;
-
+coin_death = 0;
 coins = 0;
 //if !(variable_instance_exists(id, "saved_coins"))
 //{

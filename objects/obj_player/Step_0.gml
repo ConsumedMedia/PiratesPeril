@@ -117,9 +117,12 @@ if (obj_game.player_health == 0 || obj_game.player_health <= 0)
 	instance_destroy(obj_wake);
 	obj_game.player_health = 3;
 	obj_store.ship_health = 0;
+	obj_game.coin_death = obj_game.coins * 0.10;
+	obj_game.coins = obj_game.coins - obj_game.coin_death;
+	show_debug_message("coin death: " + string(obj_game.coin_death));
 	gamepad_set_vibration(0, 1, 1);
 	instance_destroy();
-
+	
 
 // transition to rm_menu_died
 	with (obj_game) 

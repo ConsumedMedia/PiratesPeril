@@ -9,6 +9,7 @@ with (obj_game)
 {
 	//if (obj_game.points > highscore)
 	//{
+		
 		highscore = global.points;
 		saved_coins = coins;
 		var _saveEntity = 
