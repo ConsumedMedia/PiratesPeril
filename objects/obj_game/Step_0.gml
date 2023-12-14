@@ -13,3 +13,4 @@ else if (points >= 1000)
 {
 	level = 2;
 }
+

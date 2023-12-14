@@ -13,6 +13,6 @@ img_speed = 4; // / room_speed;
 //direction = random(360);
 //image_angle = random(360);
 
-enemy_life = 3;
+enemy_life = 2;
 yspeed = 0;
 

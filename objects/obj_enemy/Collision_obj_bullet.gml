@@ -15,29 +15,16 @@ effect_create_above(ef_explosion, x, y, 1, c_orange);
 
 direction = random(360);
 
-
-//if sprite_index == spr_boat_enemy && image_index != 2
-if enemy_life == 2
+ if enemy_life == 1
 {
 	sprite_index = spr_boat_enemy1_2;
-	//image_index = 2;
-	enemy_life -= 1;
-	
-//	instance_copy(true);
+
 }
 
-//else if instance_number(obj_enemy) < 12
-
-//{
-//	sprite_index = spr_boat_enemy1;
-//	image_index = 0;
-//	x = 0;
-//}
 else if enemy_life == 0
-//else if image_index == 2
 
 {
-	enemy_life = 3;
+	enemy_life = 2;
 	instance_destroy();
 	if (obj_game.level == 1)
 	{
