@@ -1,4 +1,6 @@
-alarm[0] = 2 * 60;
+
+alarm[0] = 50;
+
 speed = 1;
 direction = 90;
 wake_index = 0;

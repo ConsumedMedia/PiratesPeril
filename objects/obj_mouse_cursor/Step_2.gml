@@ -16,7 +16,7 @@ y = clamp(y, view_yview, view_yview+view_hview);
 
 }
 */
-if (room == rm_game)
+if (room == rm_game) && (obj_game.paused == false)
 {
 	invisible_timer--;
 	

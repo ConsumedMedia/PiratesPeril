@@ -17,11 +17,11 @@ if gamepad_is_connected(0)
 		image_alpha = 1;
 	}		
 }
-if (room == rm_game) || (room == rm_store)
+if ((room == rm_game) && (obj_game.paused == false)) || (room == rm_store) 
 {
 	image_alpha = 0;
 }
-else if (room == rm_menu_died) || (room == rm_menu)
+else if (room == rm_menu_died) || (room == rm_menu) || ((room == rm_game) && (obj_game.paused == true))
 {
 	image_alpha = 1;
 }

@@ -61,3 +61,12 @@ if instance_exists(obj_player)
 		//show_debug_message("store title");
 	}
 
+//code to draw the pause menu
+if (paused == true)
+{
+	//draw_set_color(c_black);
+	//draw_set_alpha(0.60);
+	//draw_set_font(fnt_menu);
+	draw_text(270, 200, "Paused");
+	draw_text_transformed(180, 250, "Press 'ESC' to Continue", .5, .5, 0);
+}

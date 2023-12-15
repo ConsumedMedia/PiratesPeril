@@ -1,5 +1,10 @@
 y = ystart;
-if (room == rm_game) || (room == rm_store) exit;
+if ((room == rm_game) && (obj_game.paused == false)) || (room == rm_store) 
+{
+	exit;
+}
+else 
+{
 
 // btn sound FX check if on
 if sound_fx_off == false
@@ -20,3 +25,4 @@ if (image_index == 0)
 	 sound_fx_off = false;
 	
  }  
+}
