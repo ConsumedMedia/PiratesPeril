@@ -1,5 +1,5 @@
 
-alarm[0] = 50;
+alarm[0] = 150;
 
 speed = 1;
 direction = 90;

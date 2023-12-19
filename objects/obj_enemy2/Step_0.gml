@@ -14,7 +14,7 @@ image_alpha = 1;
 //previous_x = x;
 //previous_y = y;
 
-if (obj_game.level == 3)
-{
-	alarm[0] = 50;	
-}
+//if (obj_game.level == 3)
+//{
+	//alarm[0] = 50;	
+//}

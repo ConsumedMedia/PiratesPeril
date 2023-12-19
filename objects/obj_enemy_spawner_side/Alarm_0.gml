@@ -10,7 +10,7 @@ if (instance_number(obj_enemy) < 5) && (obj_game.level == 1)
 		yspeed = 1;
 	}
 }
-else if (instance_number(obj_enemy) < 5) && (obj_game.level == 2)
+else if (instance_number(obj_enemy) < 5) && (obj_game.level >= 2)
 {
 	if (random(3) >= 2)
 		{

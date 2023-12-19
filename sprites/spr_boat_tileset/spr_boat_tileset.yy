@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_boat_tileset",
-  "bbox_bottom": 670,
-  "bbox_left": 0,
-  "bbox_right": 638,
+  "bbox_bottom": 554,
+  "bbox_left": 121,
+  "bbox_right": 719,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Boats",
+    "path": "folders/Sprites/Boats.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
