@@ -107,6 +107,15 @@ if mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space) || ga
 		_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
 		_bullet.direction -= 10;
 	}
+	if powerup == 3
+	{
+		var _bullet = instance_create_layer(x, y, "Instances", obj_bullet);
+		_bullet.direction += 90;
+		_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
+		_bullet.direction -= 90;
+		_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
+		_bullet.direction -= 180;
+	}
 }
 
 // player died
