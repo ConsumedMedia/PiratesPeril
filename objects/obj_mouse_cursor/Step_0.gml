@@ -14,10 +14,10 @@ y = mouse_y;
 //}
 
  
- if gamepad_is_connected(0) 
+ if gamepad_is_connected(global.gamepad) 
 {
-var xaxis = gamepad_axis_value(0, gp_axislh);
-var yaxis = gamepad_axis_value(0, gp_axislv);
+var xaxis = gamepad_axis_value(global.gamepad, gp_axislh);
+var yaxis = gamepad_axis_value(global.gamepad, gp_axislv);
 var spd_max = 16; // Maximum cursor speed for the gamepad.
 
 offset_x += (spd_max*xaxis);

@@ -2,24 +2,24 @@
   
   
 // direction and movement
-if keyboard_check(vk_up) || keyboard_check(ord("W")) || gamepad_button_check(0, gp_padu)
+if keyboard_check(vk_up) || keyboard_check(ord("W")) || gamepad_button_check(global.gamepad, gp_padu)
 {
 	motion_add(image_angle, 0.03);
 }
 
-if keyboard_check(vk_down) || keyboard_check(ord("S")) || gamepad_button_check(0, gp_padd)
+if keyboard_check(vk_down) || keyboard_check(ord("S")) || gamepad_button_check(global.gamepad, gp_padd)
 {
 	motion_add(image_angle, -0.03);
 	
 }
 
-if keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(0, gp_padl)
+if keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(global.gamepad, gp_padl)
 {
 	image_angle += 4;
 	
 }
 
-if keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(0, gp_padr)
+if keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(global.gamepad, gp_padr)
 {
 	image_angle -= 4;
 
@@ -91,8 +91,10 @@ if (place_meeting(x, y, obj_wall))
 
 
 // fire cannon
-if mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1)
+if mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(global.gamepad, gp_face1)
 {
+	if (!cooldown) {
+				
 	instance_create_layer(x, y, "Instances", obj_bullet);
 	if obj_btn_sound_fx.sound_fx_off == false
 	{	
@@ -116,6 +118,9 @@ if mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space) || ga
 		_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
 		_bullet.direction -= 180;
 	}
+	cooldown = true;
+	alarm[1] = 30;
+}
 }
 
 // player died

@@ -6,6 +6,7 @@ player_health = 3;
 highscore = 0;
 
 global.points = highscore;
+global.gamepad = 0;
 
 level = 1;
 paused = false;

@@ -1,2 +1,1 @@
-powerup = 0;
 cooldown = false;

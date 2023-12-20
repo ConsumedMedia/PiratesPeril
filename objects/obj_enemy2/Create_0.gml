@@ -16,5 +16,6 @@ img_speed = 4; // / room_speed;
 //image_angle = random(360);
 
 enemy_life = 3;
+enemy_cooldown = false;
 yspeed = 0;
 
