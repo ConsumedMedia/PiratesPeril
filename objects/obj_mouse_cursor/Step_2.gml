@@ -16,17 +16,23 @@ y = clamp(y, view_yview, view_yview+view_hview);
 
 }
 */
-if (room == rm_game) && (obj_game.paused == false)
+if gamepad_is_connected(global.gamepad) 
 {
-	invisible_timer--;
 	
-	if (invisible_timer <= 0)
+	if (room == rm_game) && (obj_game.paused == false)
 	{
-		image_alpha -= 0.05;
+		invisible_timer--;
+	
+		if (invisible_timer <= 0)
+		{
+			image_alpha -= 0.05;
+		}
 	}
+	else
+	{
+		image_alpha = 1;
+		 invisible_timer = invisible_time;
+	}
+} else {
+	image_alpha = 1;
 }
-else
- {
-	 image_alpha = 1;
-	 invisible_timer = invisible_time;
- }

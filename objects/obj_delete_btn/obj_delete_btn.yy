@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "buttons",
+    "path": "folders/Objects/buttons.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -28,8 +28,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite15",
-    "path": "sprites/Sprite15/Sprite15.yy",
+    "name": "spr_delete_btn",
+    "path": "sprites/spr_delete_btn/spr_delete_btn.yy",
   },
   "spriteMaskId": null,
   "visible": true,
