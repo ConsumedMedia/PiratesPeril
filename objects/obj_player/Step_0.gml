@@ -265,7 +265,7 @@ if (global.last_direction == "left") && (target_angle == 180)
 }
 if gamepad_is_connected(global.gamepad)
 {
-	move_and_collide(left_stick_x * my_speed, left_stick_y * my_speed, obj_wall);
+	move_and_collide(left_stick_x * my_speed, left_stick_y * my_speed, obj_wall, 1, 1, 1);
 	
 	// Adjust image_angle towards target_angle
 
@@ -277,11 +277,17 @@ if (diff > 0) {
 }
 	
 } else {
-	move_and_collide(_xinput * my_speed, _yinput * my_speed, obj_wall);
+	move_and_collide(_xinput * my_speed, _yinput * my_speed, obj_wall, 1, 1, 1);
+	
+	if place_meeting(x, y, obj_wall)
+	{
+		x = xprevious + 10;
+		y = yprevious + 10;
+	}
 	
 	var _dir = point_direction(x, y, mouse_x, mouse_y);
 	var _diff = angle_difference(_dir, image_angle);
-	image_angle += _diff * 0.1;
+	image_angle += _diff * 0.1;	
 }
 
 

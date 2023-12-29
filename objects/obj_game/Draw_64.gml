@@ -67,6 +67,14 @@ if (paused == true)
 	//draw_set_color(c_black);
 	//draw_set_alpha(0.60);
 	//draw_set_font(fnt_menu);
-	draw_text(270, 200, "Paused");
-	draw_text_transformed(180, 250, "Press 'ESC' to Continue", .5, .5, 0);
+	if gamepad_is_connected(global.gamepad)
+	{
+		draw_text(270, 200, "Paused");
+		draw_text_transformed(180, 250, "Press 'Start' to Continue", .5, .5, 0);
+	}
+	else 
+	{
+		draw_text(270, 200, "Paused");
+		draw_text_transformed(180, 250, "Press 'ESC' to Continue", .5, .5, 0);
+	}
 }
