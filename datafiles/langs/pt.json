@@ -1,0 +1,26 @@
+{
+    "pt": {
+		"LanguageName": "PORTUGESE",		
+		"PLAY" : "JOGAR",
+		"High Score" : "PONTUAÇÃO MÁXIMA",
+		"Help" : "AJUDA",
+		"Quit" : "DESISTIR",
+		"your high score is" : "SUA PONTUAÇÃO MAIS ALTA É",
+		"collected coins" : "MOEDAS COLETADAS",
+		"move with arrow keys or WASD" : "MOVA COM AS TECLAS DE SETA OU WASD",
+		"shoot with mouse or spacebar" : "ATIRAR COM MOUSE OU BARRA DE ESPAÇO",
+		"pause game with ESC" : "PAUSAR O JOGO COM ESCAPE",
+		"Score" : "PONTUAÇÃO",
+		"Health" : "SAÚDE",
+		"Coins" : "MOEDAS",
+		"paused" : "PAUSADO",
+		"press 'esc' to continue" : "PRESSIONE ESCAPE PARA CONTINUAR",
+		"press 'start' to continue" : "PRESSIONE INICIAR PARA CONTINUAR",
+		"Language" : "LINGUAGEM",
+		"move with left stick or d pad" : "MOVA COM O CONTROLE ESQUERDO OU D PAD",
+		"shoot with pressing A button" : "ATIRAR PRESSIONANDO O BOTÃO A",
+		"Main Menu" : "MENU PRINCIPAL",
+		"Retry" : "TENTE NOVAMENTE",
+		"Store" : "LOJA",
+	}
+}

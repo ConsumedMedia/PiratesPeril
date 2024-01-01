@@ -15,6 +15,7 @@ coin_death = 0;
 coins = 0;
 saved_coins = 0;
 
+lang_set("en");
 
  if file_exists("savedgame.save")
 {

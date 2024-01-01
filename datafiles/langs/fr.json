@@ -1,0 +1,26 @@
+{
+    "fr": {
+		"LanguageName": "FRENCH",		
+		"PLAY" : "JOUER",
+		"High Score" : "SCORE ÉLEVÉ",
+		"Help" : "AIDE",
+		"Quit" : "QUITTER",
+		"your high score is" : "VOTRE MEILLEUR SCORE EST",
+		"collected coins" : "PIÈCES COLLECTÉES",
+		"move with arrow keys or WASD" : "DÉPLACER AVEC LES TOUCHES FLÉCHÉES OU WASD",
+		"shoot with mouse or spacebar" : "TIRER AVEC LA SOURIS OU LA BARRE D'ESPACE",
+		"pause game with ESC" : "METTRE LE JEU EN PAUSE AVEC ÉVASION",
+		"Score" : "LE SCORE",
+		"Health" : "SANTÉ",
+		"Coins" : "PIÈCES DE MONNAIE",
+		"paused" : "EN PAUSE",
+		"press 'esc' to continue" : "APPUYEZ SUR ÉCHAP POUR CONTINUER",
+		"press 'start' to continue" : "APPUYEZ SUR DÉMARRER POUR CONTINUER",
+		"Language" : "LANGUE",
+		"move with left stick or d pad" : "DÉPLACER AVEC LE JOYSTICK GAUCHE OU LE PAVÉ D",
+		"shoot with pressing A button" : "TIRER EN APPUYANT SUR LE BOUTON A",
+		"Main Menu" : "MENU PRINCIPAL",
+		"Retry" : "RECOMMENCEZ",
+		"Store" : "MAGASIN",
+	}
+}

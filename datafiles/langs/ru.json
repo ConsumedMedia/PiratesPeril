@@ -1,0 +1,26 @@
+{
+    "ru": {
+		"LanguageName": "RUSSIAN",		
+		"PLAY" : "ИГРАТЬ",
+		"High Score" : "РЕКОРД",
+		"Help" : "ПОМОЩЬ",
+		"Quit" : "ПОКИДАТЬ",
+		"your high score is" : "ТВОЙ ВЫСОКИЙ БАЛЛ",
+		"collected coins" : "СОБРАННЫЕ МОНЕТЫ",
+		"move with arrow keys or WASD" : "ПЕРЕМЕЩАЙТЕСЬ С ПОМОЩЬЮ КЛАВИШ СО СТРЕЛКАМИ ИЛИ WASD",
+		"shoot with mouse or spacebar" : "СТРЕЛЯТЬ МЫШКОЙ ИЛИ ПРОБЕЛОМ",
+		"pause game with ESC" : "ПОСТАВИТЬ ИГРУ НА ПАУЗУ С ПОМОЩЬЮ КЛАВИШИ ESCAPE",
+		"Score" : "СЧЕТ",
+		"Health" : "ЗДОРОВЬЕ",
+		"Coins" : "МОНЕТЫ",
+		"paused" : "ИГРА ПОСТАВЛЕНА НА ПАУЗУ",
+		"press 'esc' to continue" : "НАЖМИТЕ ESCAPE, ЧТОБЫ ПРОДОЛЖИТЬ",
+		"press 'start' to continue" : "НАЖМИТЕ СТАРТ, ЧТОБЫ ПРОДОЛЖИТЬ",
+		"Language" : "ЯЗЫК",
+		"move with left stick or d pad" : "ПЕРЕМЕЩАЙТЕСЬ С ПОМОЩЬЮ ЛЕВОГО ДЖОЙСТИКА ИЛИ D-PAD",
+		"shoot with pressing A button" : "СТРЕЛЯТЬ НАЖАТИЕМ КНОПКИ А",
+		"Main Menu" : "ГЛАВНОЕ МЕНЮ",
+		"Retry" : "ПОВТОРИТЬ ПОПЫТКУ",
+		"Store" : "МАГАЗИН",
+	}
+}
