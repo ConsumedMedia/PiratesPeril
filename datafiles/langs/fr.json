@@ -22,5 +22,10 @@
 		"Main Menu" : "MENU PRINCIPAL",
 		"Retry" : "RECOMMENCEZ",
 		"Store" : "MAGASIN",
+		"English" : "ANGLAIS",
+		"Spanish" : "ESPAGNOL",
+		"Portuguese" : "PORTUGAIS",
+		"French" : "FRANÇAIS",
+		"Russian" : "RUSSE",
 	}
 }

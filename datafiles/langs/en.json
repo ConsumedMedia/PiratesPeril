@@ -22,5 +22,10 @@
 		"Main Menu" : "MAIN MENU",
 		"Retry" : "RETRY",
 		"Store" : "STORE",
+		"English" : "ENGLISH",
+		"Spanish" : "SPANISH",
+		"Portuguese" : "PORTUGUESE",
+		"French" : "FRENCH",
+		"Russian" : "RUSSIAN",
 	}
 }

@@ -60,6 +60,12 @@ if instance_exists(obj_player)
 		draw_text_transformed(150, 120, "Stock up for yer travels!", .5, .5, 0);
 		//show_debug_message("store title");
 	}
+	
+	if (room == rm_languages)
+	{
+		draw_text_transformed_color(300, 150, lang("Language") , 1.5, 1.5, 0, c_black, c_black, c_black, c_black,1);
+		
+	}
 
 //code to draw the pause menu
 if (paused == true)
