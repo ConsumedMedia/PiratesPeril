@@ -2,55 +2,55 @@
 if instance_exists(obj_player)
 //if (room == rm_game)
 {
-	draw_text_transformed(10, 10, lang("Score") + ": " + string(points), .5, .5, 1);
+	draw_text_transformed(10, 10, lang("Score") + ": " + string(points), 1, 1, 0);
 	//draw_text_transformed(10, 40, "Health: " + string(player_health), .5, .5, 1);
-	draw_text_transformed(10, 40, lang("Health") + ": ", .5, .5, 1);
+	draw_text_transformed(10, 40, lang("Health") + ": ", 1, 1, 0);
 	
 	// drawing the heart sprites
 	/// once i build out the store, i will have to figure out how to dynamically add more lives IF purchased
 	if player_health == 1 
 	{
-		draw_sprite_ext(spr_heart, 0, 150, 40, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
 		
 	}
 	else if player_health == 2
 	{
-		draw_sprite_ext(spr_heart, 0, 150, 40, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 170, 40, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 160, 50, 1, 1, 1, c_white, 1);
 		
 	}
 	else if player_health == 3
 	{
-		draw_sprite_ext(spr_heart, 0, 150, 40, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 170, 40, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 190, 40, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 160, 50, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 180, 50, 1, 1, 1, c_white, 1);
 		
 	}
 	else if player_health == 4
 	{
-		draw_sprite_ext(spr_heart, 0, 150, 40, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 170, 40, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 190, 40, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 210, 40, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 160, 50, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 180, 50, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 200, 50, 1, 1, 1, c_white, 1);
 	}
 	else if player_health == 5
 	{
-		draw_sprite_ext(spr_heart, 0, 150, 40, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 170, 40, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 190, 40, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 210, 40, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 230, 40, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 160, 50, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 180, 50, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 200, 50, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 220, 50, 1, 1, 1, c_white, 1);
 	}
 	
 	//temp position place this in the main menu / menu died
 	if variable_instance_exists(id, "highscore")
 	{
-		draw_text_transformed(10, 70, lang("High Score") + ": " + string(highscore), .5, .5, 1);
+		draw_text_transformed(10, 70, lang("High Score") + ": " + string(highscore), 1, 1, 0);
 	}
 	
 	if variable_instance_exists(id, "coins")
 	{
-		draw_text_transformed(10, 100, lang("Coins") + ": " + string(coins), .5, .5, 1);
+		draw_text_transformed(10, 100, lang("Coins") + ": " + string(coins), 1, 1, 0);
 	}
 }
 	

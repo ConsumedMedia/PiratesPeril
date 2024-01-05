@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boat_enemy1_1",
-    "path": "sprites/spr_boat_enemy1_1/spr_boat_enemy1_1.yy",
+    "name": "spr_enemy_update_1",
+    "path": "sprites/spr_enemy_update_1/spr_enemy_update_1.yy",
   },
   "spriteMaskId": null,
   "visible": true,
