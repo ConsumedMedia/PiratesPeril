@@ -6,3 +6,6 @@ dir = 0;
 
 offset_x = 0;
 offset_y = 0;
+
+previous_x = 0;
+previous_y = 0;

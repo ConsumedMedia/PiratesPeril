@@ -1,6 +1,5 @@
   /// @description player controls
   
-  
 // direction and movement
 
 var _right = keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(global.gamepad, gp_padr);
@@ -11,207 +10,6 @@ var _down = keyboard_check(vk_down) || keyboard_check(ord("S")) || gamepad_butto
 var _xinput = _right - _left;
 var _yinput = _down - _up;
 
-//var haxis = gamepad_axis_value(global.gamepad, gp_axislh);
-//var vaxis = gamepad_axis_value(global.gamepad, gp_axislv);
-/*
-if gamepad_is_connected(global.gamepad) 
-{
-var xaxis = gamepad_axis_value(global.gamepad, gp_axislh);
-var yaxis = gamepad_axis_value(global.gamepad, gp_axislv);
-var spd_max = 4; // Maximum cursor speed for the gamepad.
-
-offset_x += (spd_max*xaxis);
-offset_y += (spd_max*yaxis);
-
-//x = (view_xview+view_wview/2) + offset_x;
-//y = (view_yview+view_hview/2) + offset_y;
-
-//x = clamp(x, view_xview, view_xview+view_wview);
-//y = clamp(y, view_yview, view_yview+view_hview);
-//dir = point_direction(0,0, yaxis, xaxis);
-
-
-
-}
-*/
-
-//move_and_collide(xaxis * my_speed, yaxis * my_speed, obj_wall);
-
-//move_and_collide(_xinput * my_speed, _yinput * my_speed, obj_wall);
-
-//dir = point_direction(0,0, _yinput, _xinput);
-//dir = point_direction(0, 0, xaxis, yaxis);
-/*
-switch(dir) {
-	case 0:  sprite_index = spr_boat_right; break;
-	case 45: sprite_index = spr_boat_right; image_angle = 45; break;
-	case 90: sprite_index = spr_boat_up; break;
-	case 135: sprite_index = spr_boat_up; image_angle = 45; break;
-	case 180: sprite_index = spr_boat_left; break;
-	case 225: sprite_index = spr_boat_left; image_angle = 45; break;
-	case 270: sprite_index = spr_boat_down; break;
-	case 315: sprite_index = spr_boat_down; image_angle = 45; break;
-}
-*/
-
-/*
-if keyboard_check(vk_up) || keyboard_check(ord("W")) || gamepad_button_check(global.gamepad, gp_padu)
-{
-	//image_angle -= 0.03;
-	//motion_add(image_angle, 0.03);
-	//image_angle = 90;
-	//sprite_index = spr_boat_up;
-	
-	if (image_angle > 90) 
-	{
-		 // Decrease the image_angle by 3
-        image_angle -= 3;
-	}
-		// Clamp the image_angle to not go below 90
-        if (image_angle < 90) 
-		{
-			 image_angle += 3;
-            //image_angle = 90;
-        }
-		if (image_angle == 90)
-		{	
-			image_angle = 90;
-		}
-	
-	
-	dir = 90;
-}
-
-if keyboard_check(vk_down) || keyboard_check(ord("S")) || gamepad_button_check(global.gamepad, gp_padd)
-{
-	//image_angle -= 0.03;
-	//motion_add(image_angle, -0.03);
-	//image_angle = 270;
-	//sprite_index = spr_boat_down;
-	
-	// Check if the image_angle is less than 270
-    if (image_angle < 270) 
-	{
-        // Increase the image_angle by 3
-        image_angle += 3;
-	}
-
-        // Clamp the image_angle to not go above 270
-        if (image_angle > 270) 
-		{
-            //image_angle = 270;
-			 image_angle -= 3;
-        }
-		
-		if (image_angle == 0)
-		{
-			image_angle -= 3;
-		}
-		
-		if (image_angle == 270) || (image_angle == -90)
-		{	
-			image_angle = 270;
-		}
-		
-		
-	
-	dir = 270;
-}
-
-if keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(global.gamepad, gp_padl)
-{
-	//image_angle += 4;
-	//image_angle = 180;
-	//sprite_index = spr_boat_left;
-	
-	 // Check if the image_angle is greater than 180
-    if (image_angle > 180) 
-	{
-        // Decrease the image_angle by 3
-        image_angle -= 4;
-	}
-        // Adjust for wrapping around
-        if (image_angle < 180) 
-		{
-            image_angle += 4;
-        }
-
-        // Clamp the image_angle to not go below 180
-        if (image_angle == 180) 
-		{
-            image_angle = 180;
-        }
-	
-	
-	dir = 180;
-}
-
-if keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(global.gamepad, gp_padr)
-{
-	//image_angle -= 4;
-	//image_angle = 0;
-	//sprite_index = spr_boat_right;
-	
-	if (image_angle < 0 ) 
-		{
-        // Increase the image_angle by 3
-        image_angle += 4;
-		}
-
-        // Adjust for wrapping around
-        if (image_angle >= 0) 
-		{
-            image_angle -= 4;
-        }
-
-        // Clamp the image_angle to not exceed 360 (or go below 0)
-        if (image_angle == 0) 
-		{
-            image_angle = 0;
-        } else if (image_angle > 360) {
-            image_angle = 360;
-        }
-    
-	
-	dir = 0;
-}
-
-// Normalize the image_angle
-image_angle = (image_angle + 360) % 360;
-
-// Determine direction based on input
-var target_angle = -1;
-if (keyboard_check(vk_up) || keyboard_check(ord("W")) || gamepad_button_check(global.gamepad, gp_padu)) {
-    //target_angle = 90;
-	target_angle = 270;
-}
-if (keyboard_check(vk_down) || keyboard_check(ord("S")) || gamepad_button_check(global.gamepad, gp_padd)) {
-    //target_angle = 270;
-	target_angle = 90;
-}
-if (keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(global.gamepad, gp_padl)) {
-    //target_angle = 180;
-	target_angle = 0;
-}
-if (keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(global.gamepad, gp_padr)) {
-    //target_angle = 0;
-	target_angle = 180;
-}
-
-// Adjust image_angle towards target_angle
-if (target_angle != -1) {
-    var diff = angle_difference(image_angle, target_angle);
-    if (diff > 0) {
-        image_angle += min(3, diff); // Adjust by 3 degrees or the remaining difference, whichever is smaller
-    } else if (diff < 0) {
-        image_angle += max(-3, diff); // Adjust by -3 degrees or the remaining difference, whichever is larger
-    }
-}
-
-// Normalize the image_angle again after adjustment
-image_angle = (image_angle + 360) % 360;
-
-*/
 
 // Normalize the image_angle
 image_angle = (image_angle + 360) % 360;
@@ -263,27 +61,31 @@ if (global.last_direction == "left") && (target_angle == 180)
 	image_angle = 180
 }
 }
-if gamepad_is_connected(global.gamepad)
-{
-	move_and_collide(left_stick_x * my_speed, left_stick_y * my_speed, obj_wall, 1, 1, 1);
-	
+if gamepad_is_connected(global.gamepad){
+	if !coll{
+		move_and_collide(left_stick_x * my_speed, left_stick_y * my_speed, obj_wall, 1, 1, 1);
+	}
 	// Adjust image_angle towards target_angle
-
-var diff = angle_difference(image_angle, target_angle);
-if (diff > 0) {
-    image_angle += min(5, diff);  // Adjust by 3 degrees or the remaining difference, whichever is smaller
-} else if (diff < 0) {
-    image_angle += max(-5, diff);  // Adjust by -3 degrees or the remaining difference, whichever is larger
-}
+	var diff = angle_difference(image_angle, target_angle);
+	if (diff > 0){
+	    image_angle += min(5, diff);  // Adjust by 3 degrees or the remaining difference, whichever is smaller
+	}else
+	if (diff < 0){
+	    image_angle += max(-5, diff);  // Adjust by -3 degrees or the remaining difference, whichever is larger
+	}
 	
-} else {
-	move_and_collide(_xinput * my_speed, _yinput * my_speed, obj_wall, 1, 1, 1);
-	//x += obj_game.wind_x;
-
-	if place_meeting(x, y, obj_wall)
-	{
-		x = xprevious + 10;
-		y = yprevious + 10;
+}else{
+	if !coll{
+		move_and_collide(_xinput * my_speed, _yinput * my_speed, obj_wall, 1, 1, 1);
+		//x += obj_game.wind_x;
+		if (!place_meeting(x, y, obj_wall)){
+			previous_x = x;
+			previous_y = y;
+		}
+		if (place_meeting(x, y, obj_wall)){		 
+			x = previous_x;
+			y = previous_y;
+		}
 	}
 	
 	var _dir = point_direction(x, y, mouse_x, mouse_y);
@@ -292,9 +94,29 @@ if (diff > 0) {
 }
 
 
-
 // Normalize the image_angle again after adjustment
 image_angle = (image_angle + 360) % 360;
+
+
+if coll{
+	var cl = collision_rectangle(x-16,y-1,x-8,y+1,obj_wall,false,false)
+	var cr = collision_rectangle(x+8,y-1,x+16,y+1,obj_wall,false,false)
+	var cu = collision_rectangle(x-1,y-8,x+1,y-16,obj_wall,false,false)
+	var cd = collision_rectangle(x-1,y+8,x+1,y+16,obj_wall,false,false)
+	
+	if cl == noone{
+		if left_pressed{x -= my_speed}
+	}
+	if cr == noone{
+		if right_pressed{x += my_speed}
+	}
+	if cu == noone{
+		if up_pressed{y -= my_speed}
+	}
+	if cd == noone{
+		if down_pressed{y += my_speed}
+	}
+}
 
 if (obj_game.wind == false)
 {
