@@ -56,8 +56,8 @@ if instance_exists(obj_player)
 	
 	if (room == rm_store)
 	{
-		draw_text_transformed(100, 50, "Plunderer's Port", 1, 1, 0);
-		draw_text_transformed(150, 120, "Stock up for yer travels!", .5, .5, 0);
+		draw_text_transformed(140, 50, lang("Plunderer's Port"), 2, 2, 0);
+		draw_text_transformed(200, 120, lang("Stock up for yer travels"), 1, 1, 0);
 		//show_debug_message("store title");
 	}
 	

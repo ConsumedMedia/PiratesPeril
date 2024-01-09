@@ -37,8 +37,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_button_store",
-    "path": "sprites/spr_button_store/spr_button_store.yy",
+    "name": "spr_button_silver",
+    "path": "sprites/spr_button_silver/spr_button_silver.yy",
   },
   "spriteMaskId": null,
   "visible": true,

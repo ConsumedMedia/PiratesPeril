@@ -1,3 +1,3 @@
-/// @description delete SAVED Json file
+/// @description go to store
 
-room_goto(rm_test);
+room_goto(rm_store);
