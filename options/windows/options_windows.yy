@@ -6,7 +6,7 @@
   "option_windows_borderless": false,
   "option_windows_company_info": "Consumed Media ",
   "option_windows_copy_exe_to_dest": false,
-  "option_windows_copyright_info": "2023",
+  "option_windows_copyright_info": "2024",
   "option_windows_description_info": "",
   "option_windows_disable_sandbox": false,
   "option_windows_display_cursor": true,
@@ -29,6 +29,6 @@
   "option_windows_steam_use_alternative_launcher": false,
   "option_windows_texture_page": "2048x2048",
   "option_windows_use_splash": true,
-  "option_windows_version": "0.0.0.2",
+  "option_windows_version": "0.0.0.3",
   "option_windows_vsync": false,
 }
