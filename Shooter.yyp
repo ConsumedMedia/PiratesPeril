@@ -41,6 +41,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tiles","folderPath":"folders/Sprites/Tiles.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"main","folderPath":"folders/Objects/buttons/main.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"lang","folderPath":"folders/Objects/buttons/lang.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"store","folderPath":"folders/Objects/buttons/store.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"en.json","CopyToMask":-1,"filePath":"datafiles/langs",},

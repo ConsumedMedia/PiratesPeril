@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description IF player has coins
 
 event_inherited();
 

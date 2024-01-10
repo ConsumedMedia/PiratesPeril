@@ -1,3 +1,3 @@
 /// @description Insert description here
-image_index = 0;
-lives_2 = "10";
+image_index = 2;
+lives_2 = lang("Buy");

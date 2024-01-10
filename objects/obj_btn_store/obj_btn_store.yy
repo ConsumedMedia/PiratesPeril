@@ -12,8 +12,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_btn_parent","path":"objects/obj_btn_parent/obj_btn_parent.yy",},"propertyId":{"name":"btn_text","path":"objects/obj_btn_parent/obj_btn_parent.yy",},"value":"STORE",},
   ],
   "parent": {
-    "name": "buttons",
-    "path": "folders/Objects/buttons.yy",
+    "name": "store",
+    "path": "folders/Objects/buttons/store.yy",
   },
   "parentObjectId": {
     "name": "obj_btn_parent",

@@ -13,8 +13,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "buttons",
-    "path": "folders/Objects/buttons.yy",
+    "name": "main",
+    "path": "folders/Objects/buttons/main.yy",
   },
   "parentObjectId": null,
   "persistent": true,
