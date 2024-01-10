@@ -1,14 +1,10 @@
 /// @description Insert description here
-
-if (obj_store.ship_health == true)
+event_inherited();
+if (obj_store.ship_health_btn == false)
 {	
 	image_index = 1;
 	image_alpha = .5;
 	lives_1 = " ";
-}
-else 
-{
-	event_inherited();
 }
 
 

@@ -14,6 +14,8 @@
   "For3D": false,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"75fc4a16-cea9-477f-ae4f-43ecaa3b8177",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"52abfa97-dcdd-47be-a328-ed33c8fd4bc6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8444df18-7f40-4327-975a-eda719874310",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -43,7 +45,7 @@
     "events": {"resourceType":"KeyframeStore<MessageEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "eventStubScript": null,
     "eventToFunction": {},
-    "length": 1.0,
+    "length": 3.0,
     "lockOrigin": false,
     "moments": {"resourceType":"KeyframeStore<MomentsEventKeyframe>","resourceVersion":"1.0","Keyframes":[],},
     "playback": 1,
@@ -55,6 +57,8 @@
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"75fc4a16-cea9-477f-ae4f-43ecaa3b8177","path":"sprites/spr_heart/spr_heart.yy",},},},"Disabled":false,"id":"51acf3a2-8a43-4855-a024-21d6776a3529","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"52abfa97-dcdd-47be-a328-ed33c8fd4bc6","path":"sprites/spr_heart/spr_heart.yy",},},},"Disabled":false,"id":"f056d8f7-9999-437a-805a-e8cb14eb915d","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"8444df18-7f40-4327-975a-eda719874310","path":"sprites/spr_heart/spr_heart.yy",},},},"Disabled":false,"id":"a6d958f4-a75f-47ed-a540-89c32a0ea438","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

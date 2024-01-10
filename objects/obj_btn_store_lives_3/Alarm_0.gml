@@ -2,7 +2,7 @@
 
 event_inherited();
 
-if (obj_game.coins >= 15) && (obj_store.ship_health_btn_3 == false)
+if (obj_game.coins >= 15) && (obj_store.ship_health == 2)
 {
 	obj_game.coins -= 15;
 	obj_store.ship_health_btn_3 = true;
