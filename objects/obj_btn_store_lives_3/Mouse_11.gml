@@ -1,4 +1,4 @@
 /// @description Insert description here
 image_index = 0;
 text_y = y;
-lives_2 = "15";
+lives_3 = "15";

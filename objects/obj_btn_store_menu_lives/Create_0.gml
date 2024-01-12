@@ -1,26 +1,3 @@
-/// @description Insert description here
+/// @description create title var
 lives_btn_txt = lang("Lives");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
