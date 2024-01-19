@@ -1,3 +1,5 @@
+steam_update();
+
 powerup_time -= delta_time / 1000000;
 
 if !(room == rm_game)
