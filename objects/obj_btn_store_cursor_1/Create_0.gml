@@ -1,2 +1,2 @@
-lives_1 ="5";
+cursor_1 ="5";
 text_y = y;

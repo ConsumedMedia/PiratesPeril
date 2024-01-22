@@ -10,9 +10,9 @@ if (obj_game.coins >= 5) && (obj_store.ship_speed_btn == true)
 	image_index = 1;
 	obj_store.ship_speed = 1;
 	
-	obj_btn_store_speed_2.image_index = 0;
-	obj_btn_store_speed_2.image_alpha = 1;
-	obj_btn_store_speed_2.speed_2 = "10";
+	obj_btn_store_lives_2.image_index = 0;
+	obj_btn_store_lives_2.image_alpha = 1;
+	obj_btn_store_lives_2.lives_2 = "10";
 	
 	//show_debug_message("coins: " + string(obj_game.coins));
 	//show_debug_message("player health: " + string(obj_game.player_health));

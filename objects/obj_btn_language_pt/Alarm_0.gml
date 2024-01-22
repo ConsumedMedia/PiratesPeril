@@ -6,4 +6,6 @@ if obj_btn_sound_fx.sound_fx_off == false
 {
 	audio_play_sound(snd_btn, 1, false);
 }
-lang_set("pt");
+//lang_set("pt");
+obj_game.selected_lang = "pt";
+lang_set(obj_game.selected_lang);

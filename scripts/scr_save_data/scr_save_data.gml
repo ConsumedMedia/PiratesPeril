@@ -12,10 +12,12 @@ with (obj_game)
 		
 		highscore = global.points;
 		saved_coins = coins;
+		
 		var _saveEntity = 
 		{
 			highscore : highscore,
 			saved_coins : saved_coins,
+			selected_lang : selected_lang,
 		}
 	//}
 	array_push(_saveData, _saveEntity);

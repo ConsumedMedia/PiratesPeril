@@ -12,10 +12,7 @@
     "name": "Leaderboard",
     "path": "folders/Steamworks Demo/Social/Leaderboard.yy",
   },
-  "parentObjectId": {
-    "name": "Obj_YoYo_button",
-    "path": "objects/Obj_YoYo_button/Obj_YoYo_button.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -31,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "Spr_YoYo_button",
-    "path": "sprites/Spr_YoYo_button/Spr_YoYo_button.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

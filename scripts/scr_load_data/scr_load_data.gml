@@ -17,6 +17,7 @@ function LoadGame()
 			{
 				highscore = _loadEntity.highscore;
 				saved_coins = _loadEntity.saved_coins;
+				selected_lang = _loadEntity.selected_lang;
 			}
 		}
 	}

@@ -24,9 +24,11 @@ coin_death = 0;
 coins = 0;
 saved_coins = 0;
 
-lang_set("en");
+selected_lang = "en";
+
 
  if file_exists("savedgame.save")
 {
 	LoadGame();
 }
+lang_set(selected_lang);

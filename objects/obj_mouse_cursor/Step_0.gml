@@ -31,3 +31,21 @@ y = clamp(y, view_yview, view_yview+view_hview);
 
 }
 
+if obj_store.player_cursor == 0
+{
+	image_index = 0;
+}
+
+if obj_store.player_cursor == 1
+{
+	image_index = 1;
+}
+
+if obj_store.player_cursor == 2
+{
+	image_index = 2;
+}
+if obj_store.player_cursor == 3
+{
+	image_index = 3;
+}

@@ -11,10 +11,7 @@
     "name": "UGC",
     "path": "folders/Steamworks Demo/UGC.yy",
   },
-  "parentObjectId": {
-    "name": "Obj_YoYo_text",
-    "path": "objects/Obj_YoYo_text/Obj_YoYo_text.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

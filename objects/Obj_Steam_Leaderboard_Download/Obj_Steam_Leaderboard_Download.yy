@@ -13,10 +13,7 @@
     "name": "Leaderboard",
     "path": "folders/Steamworks Demo/Social/Leaderboard.yy",
   },
-  "parentObjectId": {
-    "name": "Obj_YoYo_button",
-    "path": "objects/Obj_YoYo_button/Obj_YoYo_button.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

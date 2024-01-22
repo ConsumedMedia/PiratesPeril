@@ -12,3 +12,9 @@ ship_speed = 0;
 ship_speed_btn = true;
 ship_speed_btn_2 = false;
 ship_speed_btn_3 = false;
+
+player_cursor = 0;
+player_cursor_0 = true;
+player_cursor_1 = false;
+player_cursor_2 = false;
+player_cursor_3 = false;

@@ -1,10 +1,10 @@
 /// @description Insert description here
 event_inherited();
-if (obj_store.ship_health_btn == false)
+
+if (obj_store.player_cursor_1 == true)
 {	
 	image_index = 1;
 	image_alpha = .5;
-	lives_1 = " ";
+	cursor_1 = " ";
 }
-
 
