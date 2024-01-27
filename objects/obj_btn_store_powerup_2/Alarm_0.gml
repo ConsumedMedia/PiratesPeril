@@ -7,7 +7,7 @@ if (obj_game.coins >= 10) && (obj_store.powerup_time == 0)
 	obj_game.coins -= 10;
 	obj_store.powerup_btn_3 = true;
 	image_index = 1;
-	obj_store.powerup_time = 2;
+	obj_store.powerup_time = 5;
 
 	
 	//show_debug_message("coins: " + string(obj_game.coins));
