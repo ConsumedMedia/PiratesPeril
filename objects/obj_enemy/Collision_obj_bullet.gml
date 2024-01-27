@@ -1,6 +1,6 @@
 if (obj_game.powerup_time < 0)
 {	
-	var _obj = choose(obj_powerup_spread, obj_powerup_ghost, obj_powerup_side_spread);
+	var _obj = choose(obj_powerup_spread, obj_powerup_ghost, obj_powerup_side_spread, obj_powerup_fast_shot);
 	instance_create_layer(x, y, "Instances", _obj);
 	obj_game.powerup_time = 20;
 }

@@ -128,34 +128,39 @@ if (obj_game.wind == false)
 // fire cannon
 if mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(global.gamepad, gp_face1)
 {
-	if (!cooldown) {
+	if (!cooldown) 
+	{
 				
-	instance_create_layer(x, y, "Instances", obj_bullet);
-	if obj_btn_sound_fx.sound_fx_off == false
-	{	
-		audio_play_sound(snd_cannon_fire, 0, false, 1, 0, random_range(0.8, 1.2));
-	}
+		instance_create_layer(x, y, "Instances", obj_bullet);
+		if obj_btn_sound_fx.sound_fx_off == false
+		{	
+			audio_play_sound(snd_cannon_fire, 0, false, 1, 0, random_range(0.8, 1.2));
+		}
 	
-// add cannons IF powerup is enabled	
-	if powerup == 1
-	{
-		var _bullet = instance_create_layer(x, y, "Instances", obj_bullet);
-		_bullet.direction += 10;
-		_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
-		_bullet.direction -= 10;
+	// add cannons IF powerup is enabled	
+		if powerup == 1
+		{
+			var _bullet = instance_create_layer(x, y, "Instances", obj_bullet);
+			_bullet.direction += 10;
+			_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
+			_bullet.direction -= 10;
+		}
+		if powerup == 3
+		{
+			var _bullet = instance_create_layer(x, y, "Instances", obj_bullet);
+			_bullet.direction += 90;
+			_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
+			_bullet.direction -= 90;
+			_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
+			_bullet.direction -= 180;
+		}
+		
+		if !(powerup == 4)
+		{
+			cooldown = true;
+			alarm[1] = 30;
+		}
 	}
-	if powerup == 3
-	{
-		var _bullet = instance_create_layer(x, y, "Instances", obj_bullet);
-		_bullet.direction += 90;
-		_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
-		_bullet.direction -= 90;
-		_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
-		_bullet.direction -= 180;
-	}
-	cooldown = true;
-	alarm[1] = 30;
-}
 }
 
 // player died
