@@ -41,4 +41,19 @@ else if enemy_life == 0
 			instance_create_layer(x, y, "Instances", obj_coin_silver);
 		}
 	}
+	else if (obj_game.level == 3)
+	{
+		if (random(10) >= 8)
+		{
+			instance_create_layer(x, y, "Instances", obj_emerald);
+		} 
+		else if (random(10) >= 6)
+		{	
+			instance_create_layer(x, y, "Instances", obj_coin_gold);
+		}
+		else 
+		{
+			instance_create_layer(x, y, "Instances", obj_coin_silver);
+		}
+	}
 }

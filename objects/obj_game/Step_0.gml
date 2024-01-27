@@ -8,19 +8,24 @@ if !(room == rm_game)
 	
 }
 
-if (points <= 950)
+if (points <= 950) // under 1000
 {
 	level = 1;
 	//show_debug_message("level 1");
 }
-else if (points <= 1950)
+else if (points <= 1950) // under 2000
 {
 	level = 2;
 	//show_debug_message("level 2");
 }
-else if (points <= 2950)
+else if (points <= 2950) // under 3000
 {
 	level = 3;
+	//show_debug_message("level 3");
+}
+else if (points <= 3950) // under 4000
+{
+	level = 4;
 	//show_debug_message("level 3");
 }
 
