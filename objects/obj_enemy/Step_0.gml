@@ -3,11 +3,19 @@ move_wrap(true, true, sprite_width);
 
 img_index += img_speed;
 wake_index = img_index;
-
-if (yspeed == 1)
+if (obj_player.powerup == 6) && instance_exists(obj_player)
 {
-	direction = 0;
-	x += speed;
+	speed = 0;
+	
+}
+else
+{
+	if (yspeed == 1)
+	{
+		speed = 1;
+		direction = 0;
+		x += speed;
+	}
 }
 
 image_alpha = 1;
