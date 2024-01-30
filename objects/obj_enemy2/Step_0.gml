@@ -4,10 +4,12 @@ move_wrap(true, true, sprite_width);
 img_index += img_speed;
 wake_index = img_index;
 
-if (obj_player.powerup == 6) && instance_exists(obj_player)
+if instance_exists(obj_player)
 {
-	speed = 0;
-	
+	if (obj_player.powerup == 6) 
+	{
+		speed = 0;
+	}
 }
 else
 {
