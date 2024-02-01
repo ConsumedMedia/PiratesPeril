@@ -9,12 +9,18 @@ if instance_exists(obj_player)
 	{
 		speed = 0;
 	}
+	else if !(obj_player.powerup == 6)
+	{
+		speed = 1;
+	}
 }
 else
 {
+	
+	//show_debug_message("obj_enemy speed = ", speed);
 	if (yspeed == 1)
 	{
-		speed = 1;
+		
 		direction = 0;
 		x += speed;
 	}

@@ -26,7 +26,7 @@ else if (points <= 2950) // under 3000
 else if (points <= 3950) // under 4000
 {
 	level = 4;
-	//show_debug_message("level 3");
+	//show_debug_message("level 4");
 }
 
 var gp_num = gamepad_get_device_count();
