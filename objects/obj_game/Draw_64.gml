@@ -52,6 +52,10 @@ if instance_exists(obj_player)
 	{
 		draw_text_transformed(10, 100, lang("Coins") + ": " + string(coins), 1, 1, 0);
 	}
+	if variable_instance_exists(id, "level")
+	{
+		draw_text_transformed(10, 130, "Reputation" + ": " + string(level), 1, 1, 0);
+	}
 }
 	
 	if (room == rm_store)

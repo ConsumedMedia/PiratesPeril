@@ -1,4 +1,4 @@
-alarm[0] = 150;
+alarm[0] = 250;
 //show_debug_message("Alarm 0 in obj_enemy2");
 if (obj_game.level >= 3) && (instance_exists(obj_player) && !(obj_player.powerup == 6))
 {
@@ -6,7 +6,7 @@ if (obj_game.level >= 3) && (instance_exists(obj_player) && !(obj_player.powerup
 	{
 	//show_debug_message("in the level 3 IF statement");
 	//alarm[0] = 50;
-	instance_create_layer(x, y, "Instances", obj_bullet_enemy);
+	instance_create_layer(x, y, "Instances", obj_bullet_enemy2);
 		if obj_btn_sound_fx.sound_fx_off == false
 		{	
 			audio_play_sound(snd_cannon_fire, 0, false, 1, 0, random_range(0.8, 1.2));
