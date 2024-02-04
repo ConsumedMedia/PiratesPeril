@@ -7,4 +7,4 @@ if wl != noone{
 	coll = false
 }
 
-show_debug_message($"x:{coll}")
+//show_debug_message($"x:{coll}")

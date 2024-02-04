@@ -63,7 +63,7 @@ else if (instance_number(obj_enemy) < 5) && (obj_game.level >= 4)
 			var inst = instance_create_layer(x, y, "Instances", obj_enemy4);
 			with (inst)
 			{
-				yspeed = 1;
+				
 				direction = image_angle;
 				image_angle = 90;
 			}
@@ -73,7 +73,7 @@ else if (instance_number(obj_enemy) < 5) && (obj_game.level >= 4)
 			var inst = instance_create_layer(x, y, "Instances", obj_enemy3);
 			with (inst)
 			{
-				yspeed = 1;
+				
 				direction = image_angle;
 				image_angle = 90;	
 			}
@@ -83,7 +83,7 @@ else if (instance_number(obj_enemy) < 5) && (obj_game.level >= 4)
 			var inst = instance_create_layer(x, y, "Instances", obj_enemy2);
 			with (inst)
 			{
-				yspeed = 1;
+			
 				direction = image_angle;
 				image_angle = 90;	
 			}

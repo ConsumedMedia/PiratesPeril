@@ -11,10 +11,10 @@ if gamepad_is_connected(0)
 			text_y = y + 10;
 			alarm[0] = 10;
 
-			if (obj_store.ship_health <= 1)
-			{
-				obj_store.ship_health = 0;
-			}
+			//if (obj_store.ship_health <= 1)
+			//{
+			//	obj_store.ship_health = 0;
+			//}
 		} else if (gamepad_button_check_released(global.gamepad, gp_face1))
 		{
 			text_y = y;

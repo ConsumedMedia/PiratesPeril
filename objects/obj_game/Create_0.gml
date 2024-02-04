@@ -21,7 +21,7 @@ level = 1;
 paused = false;
 
 coin_death = 0;
-coins = 0;
+coins = 15;
 saved_coins = 0;
 
 selected_lang = "en";

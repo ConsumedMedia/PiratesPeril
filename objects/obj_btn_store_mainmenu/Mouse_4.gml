@@ -1,4 +1,4 @@
-/// @description buy more health
+/// @description go to main menu
 // Inherit the parent event
 //event_inherited();
 image_index = 1;

@@ -12,11 +12,15 @@ if instance_exists(obj_player)
 	{
 		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
 		
+		show_debug_message("Player Health = " + string(player_health));
+		
 	}
 	else if player_health == 2
 	{
 		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
 		draw_sprite_ext(spr_heart, 0, 160, 50, 1, 1, 1, c_white, 1);
+		
+		show_debug_message("Player Health = " + string(player_health));
 		
 	}
 	else if player_health == 3
@@ -25,6 +29,8 @@ if instance_exists(obj_player)
 		draw_sprite_ext(spr_heart, 0, 160, 50, 1, 1, 1, c_white, 1);
 		draw_sprite_ext(spr_heart, 0, 180, 50, 1, 1, 1, c_white, 1);
 		
+		show_debug_message("Player Health = " + string(player_health));
+		
 	}
 	else if player_health == 4
 	{
@@ -32,6 +38,8 @@ if instance_exists(obj_player)
 		draw_sprite_ext(spr_heart, 0, 160, 50, 1, 1, 1, c_white, 1);
 		draw_sprite_ext(spr_heart, 0, 180, 50, 1, 1, 1, c_white, 1);
 		draw_sprite_ext(spr_heart, 0, 200, 50, 1, 1, 1, c_white, 1);
+		
+		show_debug_message("Player Health = " + string(player_health));
 	}
 	else if player_health == 5
 	{
@@ -40,6 +48,23 @@ if instance_exists(obj_player)
 		draw_sprite_ext(spr_heart, 0, 180, 50, 1, 1, 1, c_white, 1);
 		draw_sprite_ext(spr_heart, 0, 200, 50, 1, 1, 1, c_white, 1);
 		draw_sprite_ext(spr_heart, 0, 220, 50, 1, 1, 1, c_white, 1);
+		
+		show_debug_message("Player Health = " + string(player_health));
+	}
+	else if player_health == 6
+	{
+		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 160, 50, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 180, 50, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 200, 50, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 220, 50, 1, 1, 1, c_white, 1);
+		draw_sprite_ext(spr_heart, 0, 240, 50, 1, 1, 1, c_white, 1);
+		
+		show_debug_message("Player Health = " + string(player_health));
+	}
+	else if player_health >= 6
+	{
+		player_health = 6;
 	}
 	
 	//temp position place this in the main menu / menu died
