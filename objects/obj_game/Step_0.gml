@@ -16,16 +16,19 @@ if (points <= 950) // under 1000
 else if (points <= 1950) // under 2000
 {
 	level = 2;
+	wind_x = .5;
 	//show_debug_message("level 2");
 }
 else if (points <= 2950) // under 3000
 {
 	level = 3;
+	wind_x = .7;
 	//show_debug_message("level 3");
 }
 else if (points <= 3950) // under 4000
 {
 	level = 4;
+	wind_x = 1;
 	//show_debug_message("level 4");
 }
 
@@ -54,7 +57,8 @@ if gamepad_is_connected(global.gamepad)
 	instance_activate_object(obj_btn_sound);
 	instance_activate_object(obj_btn_sound_fx);
 	instance_activate_object(obj_mouse_cursor);
-	
+	instance_activate_layer("Instances_1");
+	instance_activate_object(obj_ocean);
 	
 	// create buttons to appear ONLY when game paused.
 }

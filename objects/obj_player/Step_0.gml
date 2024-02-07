@@ -77,7 +77,7 @@ if gamepad_is_connected(global.gamepad){
 }else{
 	if !coll{
 		move_and_collide(_xinput * my_speed, _yinput * my_speed, obj_wall, 1, 1, 1);
-		//x += obj_game.wind_x;
+		x += obj_game.wind_x;
 		if (!place_meeting(x, y, obj_wall)){
 			previous_x = x;
 			previous_y = y;
@@ -117,13 +117,12 @@ if coll{
 		if down_pressed{y += my_speed}
 	}
 }
-
+/*
 if (obj_game.wind == false)
 {
 	obj_game.wind_x = 5
-	
-	
 }
+*/
 
 // fire cannon
 if mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(global.gamepad, gp_face1)

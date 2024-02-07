@@ -7,9 +7,9 @@ highscore = 0;
 
 wind = false;
 wind_direction = 0;
-wind_speed = 0;
-wind_x = 0;
-wind_y = 0;
+wind_speed = .2;
+wind_x = .3;
+wind_y = .3;
 
 player_wind_x = wind_x * (wind_direction + wind_speed);
 player_wind_y = wind_y * (wind_direction + wind_speed);
@@ -21,7 +21,7 @@ level = 1;
 paused = false;
 
 coin_death = 0;
-coins = 15;
+coins = 0;
 saved_coins = 0;
 
 selected_lang = "en";

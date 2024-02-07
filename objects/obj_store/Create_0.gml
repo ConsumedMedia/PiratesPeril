@@ -6,7 +6,7 @@ ship_health_btn_3 = false;
 powerup_time = 0;
 powerup_btn = true;
 powerup_btn_2 = false;
-powerup_btn_btn_3 = false;
+powerup_btn_3 = false;
 
 ship_speed = 0;
 ship_speed_btn = true;

@@ -1,6 +1,6 @@
 powerup = 0;
 cooldown = false;
-my_speed = 2;
+my_speed = 2 + obj_store.ship_speed;
 dir = 0;
 //target_angle = 0;
 
