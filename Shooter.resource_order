@@ -43,6 +43,7 @@
     {"name":"Steamworks","order":16,"path":"folders/Steamworks.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":15,"path":"folders/Timelines.yy",},
+    {"name":"help","order":16,"path":"folders/Objects/controls/help.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"LanguageSystemController","order":3,"path":"objects/LanguageSystemController/LanguageSystemController.yy",},
@@ -150,6 +151,7 @@
     {"name":"Room_Steam_Overlay","order":10,"path":"rooms/Room_Steam_Overlay/Room_Steam_Overlay.yy",},
     {"name":"obj_btn_store_cursor_3","order":20,"path":"objects/obj_btn_store_cursor_3/obj_btn_store_cursor_3.yy",},
     {"name":"Room_Steam_Storage","order":5,"path":"rooms/Room_Steam_Storage/Room_Steam_Storage.yy",},
+    {"name":"spr_textbox_bg","order":12,"path":"sprites/spr_textbox_bg/spr_textbox_bg.yy",},
     {"name":"spr_water_tiles","order":1,"path":"sprites/spr_water_tiles/spr_water_tiles.yy",},
     {"name":"spr_coin_silver","order":2,"path":"sprites/spr_coin_silver/spr_coin_silver.yy",},
     {"name":"obj_bullet_enemy2","order":4,"path":"objects/obj_bullet_enemy2/obj_bullet_enemy2.yy",},
@@ -164,6 +166,7 @@
     {"name":"obj_powerup_side_spread","order":3,"path":"objects/obj_powerup_side_spread/obj_powerup_side_spread.yy",},
     {"name":"spr_mouse_cursor","order":8,"path":"sprites/spr_mouse_cursor/spr_mouse_cursor.yy",},
     {"name":"rm_store","order":3,"path":"rooms/rm_store/rm_store.yy",},
+    {"name":"rm_help","order":6,"path":"rooms/rm_help/rm_help.yy",},
     {"name":"Obj_Steam_Overlay_Setting","order":6,"path":"objects/Obj_Steam_Overlay_Setting/Obj_Steam_Overlay_Setting.yy",},
     {"name":"obj_btn_store_lives_2","order":3,"path":"objects/obj_btn_store_lives_2/obj_btn_store_lives_2.yy",},
     {"name":"spr_powerup_x2","order":10,"path":"sprites/spr_powerup_x2/spr_powerup_x2.yy",},

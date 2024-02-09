@@ -7,30 +7,73 @@ if !(room == rm_game)
 	gamepad_set_vibration(0, 0, 0);
 	
 }
+if instance_exists(obj_player)
+{
+	if random(2) == 2
+	{
+		 wind_dir = wind_y;
+		// show_debug_message("random was 2");
+	}
+	else 
+	{
+		 wind_dir = wind_x;
+		 // show_debug_message("random was 1");
+	}
+}
 
 if (points <= 950) // under 1000
 {
 	level = 1;
-	//show_debug_message("level 1");
+	//show_debug_message("wind_dir: " + string(wind_dir));
 }
 else if (points <= 1950) // under 2000
 {
 	level = 2;
-	wind_x = .5;
-	//show_debug_message("level 2");
+	if random(2) == 1
+	{
+		wind_x = .5;
+		wind_y = .5;
+	}
+	else
+	{
+		wind_x = -.5;
+		wind_y = -.5;
+	}
+	//show_debug_message("wind_dir: " + string(wind_dir));
 }
 else if (points <= 2950) // under 3000
 {
 	level = 3;
-	wind_x = .7;
-	//show_debug_message("level 3");
+	if random(2) == 1
+	{
+		wind_x = .7;
+		wind_y = .7;
+	}
+	else
+	{
+		wind_x = -.7;
+		wind_y = -.7;
+	}
+	
+	//show_debug_message("wind_dir: " + string(wind_dir));
 }
 else if (points <= 3950) // under 4000
 {
 	level = 4;
-	wind_x = 1;
-	//show_debug_message("level 4");
+	if random(2) == 1
+	{
+		wind_x = 1;
+		wind_y = 1;
+	}
+	else
+	{
+		wind_x = -1;
+		wind_y = -1;
+	}
+	
+	//show_debug_message("wind_dir: " + string(wind_dir));
 }
+
 
 var gp_num = gamepad_get_device_count();
 for (var i = 0; i < gp_num; i++;)

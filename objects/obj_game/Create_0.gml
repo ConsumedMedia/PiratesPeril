@@ -10,6 +10,7 @@ wind_direction = 0;
 wind_speed = .2;
 wind_x = .3;
 wind_y = .3;
+wind_dir = wind_x;
 
 player_wind_x = wind_x * (wind_direction + wind_speed);
 player_wind_y = wind_y * (wind_direction + wind_speed);

@@ -64,20 +64,41 @@ if (global.last_direction == "left") && (target_angle == 180)
 if gamepad_is_connected(global.gamepad){
 	if !coll{
 		move_and_collide(left_stick_x * my_speed, left_stick_y * my_speed, obj_wall, 1, 1, 1);
+		
+		if (obj_game.wind_dir == obj_game.wind_x)
+		{
+			x += obj_game.wind_x;
+		}
+		else if (obj_game.wind_dir == obj_game.wind_y)
+		{
+			y += obj_game.wind_y;
+		}
+		
 	}
+	
 	// Adjust image_angle towards target_angle
 	var diff = angle_difference(image_angle, target_angle);
 	if (diff > 0){
 	    image_angle += min(5, diff);  // Adjust by 3 degrees or the remaining difference, whichever is smaller
 	}else
 	if (diff < 0){
-	    image_angle += max(-5, diff);  // Adjust by -3 degrees or the remaining difference, whichever is larger
+	    image_angle += max(-5, diff);  // Adjust by -3 degrees or the remaining diffewrence, whichever is larger
 	}
 	
-}else{
+}
+else
+{
 	if !coll{
 		move_and_collide(_xinput * my_speed, _yinput * my_speed, obj_wall, 1, 1, 1);
-		x += obj_game.wind_x;
+		if (obj_game.wind_dir == obj_game.wind_x)
+		{
+			x += obj_game.wind_x;
+		}
+		else if (obj_game.wind_dir == obj_game.wind_y)
+		{
+			y += obj_game.wind_y;
+		}
+		
 		if (!place_meeting(x, y, obj_wall)){
 			previous_x = x;
 			previous_y = y;
@@ -117,12 +138,7 @@ if coll{
 		if down_pressed{y += my_speed}
 	}
 }
-/*
-if (obj_game.wind == false)
-{
-	obj_game.wind_x = 5
-}
-*/
+
 
 // fire cannon
 if mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(global.gamepad, gp_face1)
