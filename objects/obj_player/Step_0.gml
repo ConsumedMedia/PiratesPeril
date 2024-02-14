@@ -86,7 +86,18 @@ if gamepad_is_connected(global.gamepad){
 		}
 		
 	}
-	
+/*	
+#region key remapping
+
+if 
+var binding_left = input_binding_get("left");
+var binding_icon = input_binding_get_icon(binding_left);
+var binding_name = input_binding_get_name(binding_left);
+
+
+
+#endregion
+*/	
 	// Adjust image_angle towards target_angle
 	var diff = angle_difference(image_angle, target_angle);
 	if (diff > 0){

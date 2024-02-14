@@ -17,7 +17,8 @@ function __input_config_verbs()
         {
             up:    [input_binding_key(vk_up),    input_binding_key("W")],
             down:  [input_binding_key(vk_down),  input_binding_key("S")],
-            left:  [input_binding_key(vk_left),  input_binding_key("A")],
+            left:  [input_binding_key("A")],
+			//left:  [input_binding_key(vk_left),  input_binding_key("A")],
             right: [input_binding_key(vk_right), input_binding_key("D")],
             
             accept:  input_binding_key(vk_space),

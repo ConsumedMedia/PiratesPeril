@@ -27,8 +27,15 @@ input_icon_touch("Virtual button");
 //Any keyboard key label not in this struct will simply fall through and return the key name
 input_icons_keyboard_and_mouse()
 //Put extra .add() commands here to add icons to keyboard and mouse
+#region primary
+.add("0",      spr_0_key)
+.add("1",      spr_1_key)
+.add("2",      spr_3_key)
 
-
+.add("W",      spr_W_key)
+.add("S",      spr_S_key)
+.add("A",      spr_A_key)
+.add("D",      spr_D_key)
 
 #region Gamepads
 
