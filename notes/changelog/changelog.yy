@@ -1,9 +1,11 @@
 {
-  "resourceType": "GMNotes",
-  "resourceVersion": "1.1",
-  "name": "changelog",
-  "parent": {
-    "name": "Shooter",
-    "path": "Shooter.yyp",
+  "$GMNotes":"",
+  "%Name":"changelog",
+  "name":"changelog",
+  "parent":{
+    "name":"Shooter",
+    "path":"Shooter.yyp",
   },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
 }

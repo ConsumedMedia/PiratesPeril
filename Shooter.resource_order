@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Animation Curves","order":10,"path":"folders/Animation Curves.yy",},
     {"name":"Extensions","order":12,"path":"folders/Extensions.yy",},
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
@@ -63,6 +63,8 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Boats","order":41,"path":"folders/Sprites/Boats.yy",},
     {"name":"Buttons","order":43,"path":"folders/Sprites/Buttons.yy",},
+    {"name":"Control Btn Images","order":47,"path":"folders/Sprites/Control Btn Images.yy",},
+    {"name":"Keyboard-Mouse","order":1,"path":"folders/Sprites/Control Btn Images/Keyboard-Mouse.yy",},
     {"name":"Controls","order":44,"path":"folders/Sprites/Controls.yy",},
     {"name":"Items","order":46,"path":"folders/Sprites/Items.yy",},
     {"name":"Loot","order":42,"path":"folders/Sprites/Loot.yy",},
@@ -82,10 +84,8 @@
     {"name":"Steamworks","order":16,"path":"folders/Steamworks.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":15,"path":"folders/Timelines.yy",},
-    {"name":"Control Btn Images","order":47,"path":"folders/Sprites/Control Btn Images.yy",},
-    {"name":"Keyboard-Mouse","order":1,"path":"folders/Sprites/Control Btn Images/Keyboard-Mouse.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"LanguageSystemController","order":3,"path":"objects/LanguageSystemController/LanguageSystemController.yy",},
     {"name":"input_cursor_x","order":10,"path":"scripts/input_cursor_x/input_cursor_x.yy",},
     {"name":"__input_multiplayer_assignment_tick","order":1,"path":"scripts/__input_multiplayer_assignment_tick/__input_multiplayer_assignment_tick.yy",},
