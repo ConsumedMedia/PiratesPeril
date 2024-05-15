@@ -1,16 +1,16 @@
   /// @description player controls
   
 // direction and movement
-/*
+
 var _right = keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(global.gamepad, gp_padr);
 var _left = keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(global.gamepad, gp_padl);
 var _up = keyboard_check(vk_up) || keyboard_check(ord("W")) || gamepad_button_check(global.gamepad, gp_padu);
 var _down = keyboard_check(vk_down) || keyboard_check(ord("S")) || gamepad_button_check(global.gamepad, gp_padd);
-*/
-var _right = (input_check("right"));
-var _left = (input_check("left"));
-var _up = (input_check("up"));
-var _down = (input_check("down"));
+
+//var _right = (input_check("right"));
+//var _left = (input_check("left"));
+//var _up = (input_check("up"));
+//var _down = (input_check("down"));
 
 var _xinput = _right - _left;
 var _yinput = _down - _up; 
@@ -24,16 +24,16 @@ if (!variable_global_exists("last_direction")) {
 }
 
 // Initialize variables
-/*
+
 var right_pressed = keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(global.gamepad, gp_padr);
 var left_pressed = keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(global.gamepad, gp_padl);
 var up_pressed = keyboard_check(vk_up) || keyboard_check(ord("W")) || gamepad_button_check(global.gamepad, gp_padu);
 var down_pressed = keyboard_check(vk_down) || keyboard_check(ord("S")) || gamepad_button_check(global.gamepad, gp_padd);
-*/
-var right_pressed = (input_check("right"));
-var left_pressed = (input_check("left"));
-var up_pressed = (input_check("up"));
-var down_pressed = (input_check("down"));
+
+//var right_pressed = (input_check("right"));
+//var left_pressed = (input_check("left"));
+//var up_pressed = (input_check("up"));
+//var down_pressed = (input_check("down"));
 
 // Initialize joystick values
 var left_stick_x = gamepad_axis_value(global.gamepad, gp_axislh);
