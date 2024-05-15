@@ -7,8 +7,8 @@
 		"Quit" : "QUIT",
 		"your high score is" : "YOUR HIGH SCORE IS",
 		"collected coins" : "COLLECTED COINS",
-		"move with arrow keys or WASD" : "MOVE WITH ARROW KEYS OR WASD",
-		"shoot with mouse or spacebar" : "SHOOT WITH MOUSE OR SPACEBAR",
+		"move with arrow keys or WASD" : "TO MOVE USE THE ARROW KEYS OR WASD.",
+		"shoot with mouse or spacebar" : "TO SHOOT USE THE MOUSE OR SPACEBAR.",
 		"pause game with ESC" : "PAUSE GAME WITH ESC",
 		"Score" : "SCORE",
 		"Health" : "HEALTH",
@@ -17,8 +17,8 @@
 		"press 'esc' to continue" : "PRESS ESC TO CONTINUE",
 		"press 'start' to continue" : "PRESS START TO CONTINUE",
 		"Language" : "LANGUAGE",
-		"move with left stick or d pad" : "MOVE WITH LEFT STICK OR D PAD",
-		"shoot with pressing A button" : "SHOOT WITH PRESSING A BUTTON",
+		"move with left stick or d pad" : "TO MOVE USE LEFT STICK OR D PAD.",
+		"shoot with pressing A button" : "SHOOT BY PRESSING A BUTTON.",
 		"Main Menu" : "MAIN MENU",
 		"Retry" : "RETRY",
 		"Store" : "STORE",
@@ -39,5 +39,6 @@
 		"5" : "5",
 		"Cursor" : "CURSOR",
 		"Select Cursor" : "SELECT CURSOR",
+		"Pirate Help" : "HI CAPTAIN, I'M YOUR FIRST MATE! HERE ARE THE CONTROLS:",
 	}
 }

@@ -7,8 +7,8 @@
 		"Quit" : "DESISTIR",
 		"your high score is" : "SUA PONTUAÇÃO MAIS ALTA É",
 		"collected coins" : "MOEDAS COLETADAS",
-		"move with arrow keys or WASD" : "MOVA COM AS TECLAS DE SETA OU WASD",
-		"shoot with mouse or spacebar" : "ATIRAR COM MOUSE OU BARRA DE ESPAÇO",
+		"move with arrow keys or WASD" : "PARA MOVER USE AS SETAS OU WASD.",
+		"shoot with mouse or spacebar" : "PARA DISPARAR USE O MOUSE OU A BARRA DE ESPAÇO.",
 		"pause game with ESC" : "PAUSAR O JOGO COM ESCAPE",
 		"Score" : "PONTUAÇÃO",
 		"Health" : "SAÚDE",
@@ -17,8 +17,8 @@
 		"press 'esc' to continue" : "PRESSIONE ESCAPE PARA CONTINUAR",
 		"press 'start' to continue" : "PRESSIONE INICIAR PARA CONTINUAR",
 		"Language" : "LINGUAGEM",
-		"move with left stick or d pad" : "MOVA COM O CONTROLE ESQUERDO OU D PAD",
-		"shoot with pressing A button" : "ATIRAR PRESSIONANDO O BOTÃO A",
+		"move with left stick or d pad" : "PARA MOVER, USE O CONTROLE ESQUERDO OU D PAD.",
+		"shoot with pressing A button" : "DISPARE PRESSIONANDO UM BOTÃO.",
 		"Main Menu" : "MENU PRINCIPAL",
 		"Retry" : "TENTE NOVAMENTE",
 		"Store" : "LOJA",
@@ -38,7 +38,8 @@
 		"Buy" : "COMPRAR",
 		"5" : "5",
 		"Cursor" : "CURSOR",
-		"Select Cursor" : "SELECT CURSOR",
+		"Select Cursor" : "SELECIONE O CURSOR",
+		"Pirate Help" : "OLÁ CAPITÃO, SOU SEU PRIMEIRO IMEDIATO! AQUI ESTÃO OS CONTROLES:",
 		
 	}
 }

@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_textbox",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_captain_thor",
+  "eventList":[],
   "managed":true,
-  "name":"obj_textbox",
+  "name":"obj_captain_thor",
   "overriddenProperties":[],
   "parent":{
-    "name":"help",
-    "path":"folders/Objects/controls/help.yy",
+    "name":"characters",
+    "path":"folders/Objects/characters.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_textbox_bg",
-    "path":"sprites/spr_textbox_bg/spr_textbox_bg.yy",
+    "name":"spr_captain_thor",
+    "path":"sprites/spr_captain_thor/spr_captain_thor.yy",
   },
   "spriteMaskId":null,
   "visible":true,
