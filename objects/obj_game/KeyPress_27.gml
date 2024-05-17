@@ -4,11 +4,12 @@ if (room == rm_game) && (paused == false)
 {
 	paused = true;
 	instance_deactivate_all(true);
+	instance_activate_object(input_controller_object);
 	instance_activate_object(obj_btn_sound);
 	instance_activate_object(obj_btn_sound_fx);
 	instance_activate_object(obj_mouse_cursor);
 	instance_activate_layer("Instances_1");
-	instance_activate_object(obj_ocean);
+	//instance_activate_object(obj_ocean);
 	
 	// create buttons to appear ONLY when game paused.
 }

@@ -27,6 +27,9 @@ saved_coins = 0;
 
 selected_lang = "en";
 
+seen_thor = false;
+thor = 0;
+ferrets_active = false;
 
  if file_exists("savedgame.save")
 {

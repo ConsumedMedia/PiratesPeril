@@ -1,5 +1,12 @@
 /// @description check for controller
-
+if  instance_exists(obj_thor_textbox) && obj_thor_textbox.finished == false
+{
+	image_alpha = 0;
+}
+else if instance_exists(obj_thor_textbox) && obj_thor_textbox.finished == true
+{
+	image_alpha = 1;
+}
 if gamepad_is_connected(0)
 {
 	if (place_meeting(x, y, obj_mouse_cursor)) && !(image_index == 1)

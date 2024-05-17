@@ -11,5 +11,12 @@ if (obj_game.points < global.points) || !(file_exists("savedgames.save"))
 }
 
 LoadGame();
-
-TransitionStart(rm_menu, sq_fadeout, sq_fadein);
+if instance_exists(obj_thor_textbox) && obj_thor_textbox.finished == false 
+{
+	
+}
+else
+{
+	obj_game.seen_thor = true;
+	TransitionStart(rm_menu, sq_fadeout, sq_fadein);
+}

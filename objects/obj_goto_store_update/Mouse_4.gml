@@ -1,3 +1,3 @@
  /// @description go to store
 
-room_goto(rm_store8);
+room_goto(rm_thor_help);

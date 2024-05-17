@@ -23,6 +23,7 @@ if instance_exists(obj_player)
 
 if (points <= 950) // under 1000
 {
+	//show_debug_message("Thor: " + string(thor));
 	level = 1;
 	//show_debug_message("wind_dir: " + string(wind_dir));
 }
@@ -97,6 +98,7 @@ if gamepad_is_connected(global.gamepad)
 {
 	paused = true;
 	instance_deactivate_all(true);
+	instance_activate_object(input_controller_object);
 	instance_activate_object(obj_btn_sound);
 	instance_activate_object(obj_btn_sound_fx);
 	instance_activate_object(obj_mouse_cursor);
