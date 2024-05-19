@@ -27,7 +27,7 @@ saved_coins = 0;
 
 selected_lang = "en";
 
-seen_thor = false;
+seen_thor = 0;
 thor = 0;
 ferrets_active = false;
 collected_ferrets = 0;

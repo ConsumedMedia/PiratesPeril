@@ -17,6 +17,6 @@ if instance_exists(obj_thor_textbox) && obj_thor_textbox.finished == false
 }
 else
 {
-	obj_game.seen_thor = true;
+	obj_game.seen_thor = 1;
 	TransitionStart(rm_menu, sq_fadeout, sq_fadein);
 }

@@ -18,6 +18,9 @@ function LoadGame()
 				highscore = _loadEntity.highscore;
 				saved_coins = _loadEntity.saved_coins;
 				selected_lang = _loadEntity.selected_lang;
+				seen_thor = _loadEntity.seen_thor;
+				collected_ferrets = _loadEntity.collected_ferrets;
+				thor = _loadEntity.thor;
 			}
 		}
 	}

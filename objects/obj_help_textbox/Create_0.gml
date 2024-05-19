@@ -6,7 +6,7 @@ if gamepad_is_connected(0)
 {
 	txt = lang("Pirate Help") + " " + lang("move with arrow keys or WASD") + " " + lang("shoot with mouse or spacebar") + " " + lang("pause game with ESC");
 }
-//txt = "asdfsadf a sadfsaf asdfsdf asdfasdf asdf assadf  asdfertgdfgd sdfgare aserear asdfgaserf aeae.";
+
 str = "";
 pos = 1;
 pos_end = string_length(txt);

@@ -30,7 +30,7 @@ if (points <= 950) // under 1000
 else if (points <= 1950) // under 2000
 {
 	level = 2;
-	if random(2) == 1
+	if irandom(2) == 1
 	{
 		wind_x = .5;
 		wind_y = .5;
@@ -45,7 +45,7 @@ else if (points <= 1950) // under 2000
 else if (points <= 2950) // under 3000
 {
 	level = 3;
-	if random(2) == 1
+	if irandom(2) == 1
 	{
 		wind_x = .7;
 		wind_y = .7;
@@ -61,7 +61,7 @@ else if (points <= 2950) // under 3000
 else if (points <= 3950) // under 4000
 {
 	level = 4;
-	if random(2) == 1
+	if irandom(2) == 1
 	{
 		wind_x = 1;
 		wind_y = 1;

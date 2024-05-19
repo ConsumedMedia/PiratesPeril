@@ -18,6 +18,9 @@ with (obj_game)
 			highscore : highscore,
 			saved_coins : saved_coins,
 			selected_lang : selected_lang,
+			seen_thor : seen_thor,
+			collected_ferrets : collected_ferrets,
+			thor : thor,
 		}
 	//}
 	array_push(_saveData, _saveEntity);

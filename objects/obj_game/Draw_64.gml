@@ -82,7 +82,7 @@ if instance_exists(obj_player)
 	{
 		draw_text_transformed(10, 130, "Reputation" + ": " + string(level), 1, 1, 0);
 	}
-	if seen_thor == true
+	if seen_thor == 1
 	{
 		draw_text_transformed(10, 160, "Ferrets" + ": " + string(collected_ferrets), 1, 1, 0);
 	}
