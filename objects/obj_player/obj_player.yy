@@ -23,6 +23,7 @@
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_powerup_x2","path":"objects/obj_powerup_x2/obj_powerup_x2.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_powerup_stop_enemy","path":"objects/obj_powerup_stop_enemy/obj_powerup_stop_enemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_bullet_enemy2","path":"objects/obj_bullet_enemy2/obj_bullet_enemy2.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"obj_ferret","path":"objects/obj_ferret/obj_ferret.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_player",

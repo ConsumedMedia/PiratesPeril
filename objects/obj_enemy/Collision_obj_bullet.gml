@@ -41,7 +41,8 @@ else if enemy_life == 0
 	{
 		if obj_game.thor == 1
 		{
-			if (random(2) == 1)
+			
+			if (irandom(1) == 1)
 			{
 				instance_create_layer(x, y, "Instances", obj_ferret);
 			} else {
@@ -56,15 +57,22 @@ else if enemy_life == 0
 	{
 		if obj_game.thor == 1
 		{
-				if (random(3) == 1)
+				if (irandom(1) == 1)
 				{
 					instance_create_layer(x, y, "Instances", obj_ferret);
-				} else if (random(10) >= 9)
+				} else if (irandom(10) >= 9)
 			{
 				instance_create_layer(x, y, "Instances", obj_coin_gold);
 			} 
-		}
 			else 
+			{	
+				instance_create_layer(x, y, "Instances", obj_coin_silver);
+			} 
+		} else if (irandom(10) >= 9)
+			{
+				instance_create_layer(x, y, "Instances", obj_coin_gold);
+			} 
+		else 
 		{	
 			instance_create_layer(x, y, "Instances", obj_coin_silver);
 		}
@@ -73,14 +81,14 @@ else if enemy_life == 0
 	{
 		if obj_game.thor == 1
 		{
-				if random(3) == 1
+				if irandom(3) == 1
 				{
 					instance_create_layer(x, y, "Instances", obj_ferret);
-				} else if (random(10) >= 8)
+				} else if (irandom(10) >= 8)
 			{
 				instance_create_layer(x, y, "Instances", obj_emerald);
 			} 
-			else if (random(10) >= 6)
+			else if (irandom(10) >= 6)
 			{	
 				instance_create_layer(x, y, "Instances", obj_coin_gold);
 			}

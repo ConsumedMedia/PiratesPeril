@@ -6,13 +6,14 @@ if instance_exists(obj_player)
 	//draw_text_transformed(10, 40, "Health: " + string(player_health), .5, .5, 1);
 	draw_text_transformed(10, 40, lang("Health") + ": ", 1, 1, 0);
 	
+	
 	// drawing the heart sprites
 	/// once i build out the store, i will have to figure out how to dynamically add more lives IF purchased
 	if player_health == 1 
 	{
 		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
 		
-		show_debug_message("Player Health = " + string(player_health));
+		//show_debug_message("Player Health = " + string(player_health));
 		
 	}
 	else if player_health == 2
@@ -20,7 +21,7 @@ if instance_exists(obj_player)
 		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
 		draw_sprite_ext(spr_heart, 0, 160, 50, 1, 1, 1, c_white, 1);
 		
-		show_debug_message("Player Health = " + string(player_health));
+		//show_debug_message("Player Health = " + string(player_health));
 		
 	}
 	else if player_health == 3
@@ -29,7 +30,7 @@ if instance_exists(obj_player)
 		draw_sprite_ext(spr_heart, 0, 160, 50, 1, 1, 1, c_white, 1);
 		draw_sprite_ext(spr_heart, 0, 180, 50, 1, 1, 1, c_white, 1);
 		
-		show_debug_message("Player Health = " + string(player_health));
+		//show_debug_message("Player Health = " + string(player_health));
 		
 	}
 	else if player_health == 4
@@ -39,7 +40,7 @@ if instance_exists(obj_player)
 		draw_sprite_ext(spr_heart, 0, 180, 50, 1, 1, 1, c_white, 1);
 		draw_sprite_ext(spr_heart, 0, 200, 50, 1, 1, 1, c_white, 1);
 		
-		show_debug_message("Player Health = " + string(player_health));
+		//show_debug_message("Player Health = " + string(player_health));
 	}
 	else if player_health == 5
 	{
@@ -49,7 +50,7 @@ if instance_exists(obj_player)
 		draw_sprite_ext(spr_heart, 0, 200, 50, 1, 1, 1, c_white, 1);
 		draw_sprite_ext(spr_heart, 0, 220, 50, 1, 1, 1, c_white, 1);
 		
-		show_debug_message("Player Health = " + string(player_health));
+		//show_debug_message("Player Health = " + string(player_health));
 	}
 	else if player_health == 6
 	{
@@ -60,7 +61,7 @@ if instance_exists(obj_player)
 		draw_sprite_ext(spr_heart, 0, 220, 50, 1, 1, 1, c_white, 1);
 		draw_sprite_ext(spr_heart, 0, 240, 50, 1, 1, 1, c_white, 1);
 		
-		show_debug_message("Player Health = " + string(player_health));
+		//show_debug_message("Player Health = " + string(player_health));
 	}
 	else if player_health >= 6
 	{
@@ -80,6 +81,10 @@ if instance_exists(obj_player)
 	if variable_instance_exists(id, "level")
 	{
 		draw_text_transformed(10, 130, "Reputation" + ": " + string(level), 1, 1, 0);
+	}
+	if seen_thor == true
+	{
+		draw_text_transformed(10, 160, "Ferrets" + ": " + string(collected_ferrets), 1, 1, 0);
 	}
 }
 	

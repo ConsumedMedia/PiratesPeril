@@ -16,13 +16,13 @@ LoadGame();
 
 if (obj_game.seen_thor == false) && (obj_game.thor == 0)
 {
-	if obj_game.level >= 1
+	if obj_game.level >= 4
 	{
-		//if random(1) == 1
-		//{
+		if irandom(1) == 1
+		{
 			TransitionStart(rm_thor_help, sq_fadeout, sq_fadein);
 			//show_debug_message("Seen Thor: " + string(obj_game.seen_thor));
-		//}
+		}
 	}	
 }
 else if obj_game.seen_thor == true

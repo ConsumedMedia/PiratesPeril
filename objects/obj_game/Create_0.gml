@@ -30,6 +30,7 @@ selected_lang = "en";
 seen_thor = false;
 thor = 0;
 ferrets_active = false;
+collected_ferrets = 0;
 
  if file_exists("savedgame.save")
 {
