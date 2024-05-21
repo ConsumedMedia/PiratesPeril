@@ -33,3 +33,8 @@ if (obj_game.seen_thor == 0) && (obj_game.thor == 0)
 		//show_debug_message("seen thor: " + string(obj_game.seen_thor));
 	}
 }
+else
+	{
+		TransitionStart(rm_store, sq_fadeout, sq_fadein);
+		//show_debug_message("seen thor: " + string(obj_game.seen_thor));
+	}

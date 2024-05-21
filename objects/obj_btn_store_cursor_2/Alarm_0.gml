@@ -2,10 +2,11 @@
 
 event_inherited();
 
-if (obj_game.coins >= 5) && (obj_store.player_cursor_0 == true)
+if (obj_game.coins >= 5) 
+//&& (obj_store.player_cursor_0 == true)
 {
 	obj_game.coins -= 5;
-	obj_store.player_cursor_1 = true;
+	obj_store.player_cursor_2 = true;
 	image_index = 1;
 	obj_store.player_cursor = 1;
 	
