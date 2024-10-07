@@ -85,6 +85,14 @@ if gamepad_is_connected(global.gamepad){
 			y += obj_game.wind_y;
 		}
 		
+		if (!place_meeting(x, y, obj_wall)){
+			previous_x = left_stick_x;
+			previous_y = left_stick_y;
+		}
+		if (place_meeting(x, y, obj_wall)){		 
+			x = previous_x;
+			y = previous_y;
+		}
 	}
 /*	
 #region key remapping
@@ -142,22 +150,64 @@ image_angle = (image_angle + 360) % 360;
 
 
 if coll{
+	
 	var cl = collision_rectangle(x-16,y-1,x-8,y+1,obj_wall,false,false)
 	var cr = collision_rectangle(x+8,y-1,x+16,y+1,obj_wall,false,false)
 	var cu = collision_rectangle(x-1,y-8,x+1,y-16,obj_wall,false,false)
 	var cd = collision_rectangle(x-1,y+8,x+1,y+16,obj_wall,false,false)
 	
 	if cl == noone{
-		if left_pressed{x -= my_speed}
+		if left_pressed
+		{
+			x -= my_speed;
+			show_debug_message("CL");
+		}
+		else 
+		{
+			x -= my_speed;
+			show_debug_message("CL");
+			
+		}
+		
 	}
 	if cr == noone{
-		if right_pressed{x += my_speed}
+		if right_pressed
+		{
+			x += my_speed;
+			show_debug_message("CR");
+		}	
+		else
+		{
+			x += my_speed;
+			show_debug_message("CR");
+		}
+		
 	}
 	if cu == noone{
-		if up_pressed{y -= my_speed}
+		if up_pressed
+		{
+			y -= my_speed;
+			show_debug_message("CU");
+		}
+		else 
+		{
+			y -= my_speed;
+			show_debug_message("CU");
+		}
+		
 	}
 	if cd == noone{
-		if down_pressed{y += my_speed}
+		if down_pressed
+		{
+			y += my_speed;
+			show_debug_message("CD");
+		}
+		else
+		{
+			y += my_speed;
+			show_debug_message("CD");
+		}
+		
 	}
 }
 
