@@ -1,4 +1,5 @@
-  /// @description player controls
+ /// @description player controls
+  
   
 // direction and movement
 
@@ -7,13 +8,8 @@ var _left = keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_butto
 var _up = keyboard_check(vk_up) || keyboard_check(ord("W")) || gamepad_button_check(global.gamepad, gp_padu);
 var _down = keyboard_check(vk_down) || keyboard_check(ord("S")) || gamepad_button_check(global.gamepad, gp_padd);
 
-//var _right = (input_check("right"));
-//var _left = (input_check("left"));
-//var _up = (input_check("up"));
-//var _down = (input_check("down"));
-
 var _xinput = _right - _left;
-var _yinput = _down - _up; 
+var _yinput = _down - _up;
 
 
 // Normalize the image_angle
@@ -24,16 +20,10 @@ if (!variable_global_exists("last_direction")) {
 }
 
 // Initialize variables
-
 var right_pressed = keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(global.gamepad, gp_padr);
 var left_pressed = keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(global.gamepad, gp_padl);
 var up_pressed = keyboard_check(vk_up) || keyboard_check(ord("W")) || gamepad_button_check(global.gamepad, gp_padu);
 var down_pressed = keyboard_check(vk_down) || keyboard_check(ord("S")) || gamepad_button_check(global.gamepad, gp_padd);
-
-//var right_pressed = (input_check("right"));
-//var left_pressed = (input_check("left"));
-//var up_pressed = (input_check("up"));
-//var down_pressed = (input_check("down"));
 
 // Initialize joystick values
 var left_stick_x = gamepad_axis_value(global.gamepad, gp_axislh);
@@ -75,60 +65,30 @@ if (global.last_direction == "left") && (target_angle == 180)
 if gamepad_is_connected(global.gamepad){
 	if !coll{
 		move_and_collide(left_stick_x * my_speed, left_stick_y * my_speed, obj_wall, 1, 1, 1);
-		
-		if (obj_game.wind_dir == obj_game.wind_x)
-		{
-			x += obj_game.wind_x;
-		}
-		else if (obj_game.wind_dir == obj_game.wind_y)
-		{
-			y += obj_game.wind_y;
-		}
-		
+		//x += obj_game.wind_x;
 		if (!place_meeting(x, y, obj_wall)){
-			previous_x = left_stick_x;
-			previous_y = left_stick_y;
+			previous_x = x;
+			previous_y = y;
 		}
 		if (place_meeting(x, y, obj_wall)){		 
 			x = previous_x;
 			y = previous_y;
 		}
 	}
-/*	
-#region key remapping
-
-if 
-var binding_left = input_binding_get("left");
-var binding_icon = input_binding_get_icon(binding_left);
-var binding_name = input_binding_get_name(binding_left);
-
-
-
-#endregion
-*/	
+	
 	// Adjust image_angle towards target_angle
 	var diff = angle_difference(image_angle, target_angle);
 	if (diff > 0){
 	    image_angle += min(5, diff);  // Adjust by 3 degrees or the remaining difference, whichever is smaller
 	}else
 	if (diff < 0){
-	    image_angle += max(-5, diff);  // Adjust by -3 degrees or the remaining diffewrence, whichever is larger
+	    image_angle += max(-5, diff);  // Adjust by -3 degrees or the remaining difference, whichever is larger
 	}
 	
-}
-else
-{
+}else{
 	if !coll{
 		move_and_collide(_xinput * my_speed, _yinput * my_speed, obj_wall, 1, 1, 1);
-		if (obj_game.wind_dir == obj_game.wind_x)
-		{
-			x += obj_game.wind_x;
-		}
-		else if (obj_game.wind_dir == obj_game.wind_y)
-		{
-			y += obj_game.wind_y;
-		}
-		
+		//x += obj_game.wind_x;
 		if (!place_meeting(x, y, obj_wall)){
 			previous_x = x;
 			previous_y = y;
@@ -150,64 +110,22 @@ image_angle = (image_angle + 360) % 360;
 
 
 if coll{
-	
 	var cl = collision_rectangle(x-16,y-1,x-8,y+1,obj_wall,false,false)
 	var cr = collision_rectangle(x+8,y-1,x+16,y+1,obj_wall,false,false)
 	var cu = collision_rectangle(x-1,y-8,x+1,y-16,obj_wall,false,false)
 	var cd = collision_rectangle(x-1,y+8,x+1,y+16,obj_wall,false,false)
 	
 	if cl == noone{
-		if left_pressed
-		{
-			x -= my_speed;
-			show_debug_message("CL");
-		}
-		else 
-		{
-			x -= my_speed;
-			show_debug_message("CL");
-			
-		}
-		
+		if left_pressed || left_stick_x = -1{x -= my_speed}
 	}
 	if cr == noone{
-		if right_pressed
-		{
-			x += my_speed;
-			show_debug_message("CR");
-		}	
-		else
-		{
-			x += my_speed;
-			show_debug_message("CR");
-		}
-		
+		if right_pressed || left_stick_x = 1{x += my_speed}
 	}
 	if cu == noone{
-		if up_pressed
-		{
-			y -= my_speed;
-			show_debug_message("CU");
-		}
-		else 
-		{
-			y -= my_speed;
-			show_debug_message("CU");
-		}
-		
+		if up_pressed || left_stick_y = -1{y -= my_speed}
 	}
 	if cd == noone{
-		if down_pressed
-		{
-			y += my_speed;
-			show_debug_message("CD");
-		}
-		else
-		{
-			y += my_speed;
-			show_debug_message("CD");
-		}
-		
+		if down_pressed || left_stick_y = 1{y += my_speed}
 	}
 }
 
