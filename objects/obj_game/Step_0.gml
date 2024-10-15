@@ -20,7 +20,7 @@ if instance_exists(obj_player)
 		 // show_debug_message("random was 1");
 	}
 }
-
+// Determine level
 if (points <= 950) // under 1000
 {
 	//show_debug_message("Thor: " + string(thor));
@@ -73,6 +73,20 @@ else if (points <= 3950) // under 4000
 	}
 	
 	//show_debug_message("wind_dir: " + string(wind_dir));
+}
+else if (points <= 4950)  // under 5000
+{
+	level = 5;
+	if irandom(2) == 1
+	{
+		wind_x = 1.5;
+		wind_y = 1.5;
+	}
+	else
+	{
+		wind_x = -1.5;
+		wind_y = -1.5;
+	}
 }
 
 

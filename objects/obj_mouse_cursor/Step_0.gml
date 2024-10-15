@@ -3,6 +3,14 @@
 x = mouse_x;
 y = mouse_y;
 
+// Constrain x position within room width
+if (x < 0) x = 0;
+if (x > room_width) x = room_width;
+
+// Constrain y position within room height
+if (y < 0) y = 0;
+if (y > room_height) y = room_height;
+
 //default check
 //if (mouse_x < 0 or mouse_x > 480)
 //{
