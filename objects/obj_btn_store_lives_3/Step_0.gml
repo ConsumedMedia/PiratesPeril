@@ -8,13 +8,13 @@ if (obj_store.ship_health_btn_3 == false)
 	lives_3 = " ";
 }
 
-if (place_meeting(x, y, obj_mouse_cursor))
+else if (place_meeting(x, y, obj_mouse_cursor))
 {
 	image_index = 2;
 	lives_3 = lang("Buy");
 }
 
-if (!place_meeting(x, y, obj_mouse_cursor))
+else if (!place_meeting(x, y, obj_mouse_cursor))
 {
 	image_index = 0;
 	text_y = y;
