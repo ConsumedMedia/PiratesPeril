@@ -2,5 +2,6 @@
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
     {"name":"obj_powerup_spread_fast","order":1,"path":"objects/obj_powerup_spread_fast/obj_powerup_spread_fast.yy",},
+    {"name":"spr_powerup_fast_spread","order":1,"path":"sprites/spr_powerup_fast_spread/spr_powerup_fast_spread.yy",},
   ],
 }

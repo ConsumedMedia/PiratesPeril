@@ -762,6 +762,7 @@
     {"id":{"name":"spr_pixel","path":"sprites/spr_pixel/spr_pixel.yy",},},
     {"id":{"name":"spr_Plus_key","path":"sprites/spr_Plus_key/spr_Plus_key.yy",},},
     {"id":{"name":"spr_powerup_fast_shot","path":"sprites/spr_powerup_fast_shot/spr_powerup_fast_shot.yy",},},
+    {"id":{"name":"spr_powerup_fast_spread","path":"sprites/spr_powerup_fast_spread/spr_powerup_fast_spread.yy",},},
     {"id":{"name":"spr_powerup_ghost","path":"sprites/spr_powerup_ghost/spr_powerup_ghost.yy",},},
     {"id":{"name":"spr_powerup_side_spread","path":"sprites/spr_powerup_side_spread/spr_powerup_side_spread.yy",},},
     {"id":{"name":"spr_powerup_spread","path":"sprites/spr_powerup_spread/spr_powerup_spread.yy",},},

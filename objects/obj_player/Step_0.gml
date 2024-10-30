@@ -161,16 +161,20 @@ if mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space) || ga
 		}
 		if powerup == 7
 		{
+			cooldown = false;
 			var _bullet = instance_create_layer(x, y, "Instances", obj_bullet);
 			_bullet.direction += 10;
 			_bullet = instance_create_layer(x, y, "Instances", obj_bullet);
 			_bullet.direction -= 10;
 		}
 		
-		if !(powerup == 4) || !(powerup == 7)
-		{
-			cooldown = true;
-			alarm[1] = 30;
+		if (powerup == 4) || (powerup == 7)
+		{	
+			cooldown = false;
+		} else 
+		{	
+				cooldown = true;
+				alarm[1] = 30;
 		}
 	}
 }
