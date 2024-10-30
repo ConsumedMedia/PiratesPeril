@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_powerup_fast_spread",
+  "%Name":"obj_powerup_spread_fast",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_powerup_fast_spread",
+  "name":"obj_powerup_spread_fast",
   "overriddenProperties":[],
   "parent":{
     "name":"items",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_powerup_spread",
-    "path":"sprites/spr_powerup_spread/spr_powerup_spread.yy",
+    "name":"spr_powerup_fast_spread",
+    "path":"sprites/spr_powerup_fast_spread/spr_powerup_fast_spread.yy",
   },
   "spriteMaskId":null,
   "visible":true,
