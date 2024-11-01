@@ -14,7 +14,8 @@ if (instance_number(obj_enemy) < 5) && (obj_game.level == 1)
 }
 else if (instance_number(obj_enemy) < 5) && (obj_game.level >= 2)
 {
-	if (random(3) >= 2)
+	if (irandom(3) == 2)
+	//if (random(3) >= 2)
 		{
 			var inst = instance_create_layer(x, y, "Instances", obj_enemy2);
 			with (inst)
@@ -34,10 +35,19 @@ else if (instance_number(obj_enemy) < 5) && (obj_game.level >= 2)
 				image_angle = 90;	
 			}
 		}
+		if (irandom(9) == 1)
+		{
+			var inst = instance_create_layer(x, y, "Instances", obj_enemy_treasure,
+			{
+				direction : image_angle,
+				image_angle : 90,
+			});
+		}
 }
 else if (instance_number(obj_enemy) < 5) && (obj_game.level == 3)
 {
-	if (random(3) >= 2)
+	if (irandom(3) == 2)
+	//if (random(3) >= 2)
 		{
 			var inst = instance_create_layer(x, y, "Instances", obj_enemy3);
 			with (inst)
@@ -47,7 +57,8 @@ else if (instance_number(obj_enemy) < 5) && (obj_game.level == 3)
 				image_angle = 90;
 			}
 		} 
-		else if (random(2) >= 2)
+		else if (irandom(2) == 2)
+		//else if (random(2) >= 2)
 		{	
 			var inst = instance_create_layer(x, y, "Instances", obj_enemy2);
 			with (inst)
@@ -67,10 +78,19 @@ else if (instance_number(obj_enemy) < 5) && (obj_game.level == 3)
 				image_angle = 90;	
 			}
 		}
+		if (irandom(9) == 1)
+		{
+			var inst = instance_create_layer(x, y, "Instances", obj_enemy_treasure,
+			{
+				direction : image_angle,
+				image_angle : 90,
+			});
+		}
 }
 else if (instance_number(obj_enemy) < 5) && (obj_game.level >= 4)
 {
-	if (random(3) >= 2)
+	if (irandom(3) == 2)
+	//if (random(3) >= 2)
 		{
 			var inst = instance_create_layer(x, y, "Instances", obj_enemy4);
 			with (inst)
@@ -80,7 +100,8 @@ else if (instance_number(obj_enemy) < 5) && (obj_game.level >= 4)
 				image_angle = 90;
 			}
 		} 
-		else if (random(2) >= 2)
+		else if (irandom(2) == 2)
+		//else if (random(2) >= 2)
 		{	
 			var inst = instance_create_layer(x, y, "Instances", obj_enemy3);
 			with (inst)
@@ -99,5 +120,13 @@ else if (instance_number(obj_enemy) < 5) && (obj_game.level >= 4)
 				direction = image_angle;
 				image_angle = 90;	
 			}
+		}
+		if (irandom(9) == 1)
+		{
+			var inst = instance_create_layer(x, y, "Instances", obj_enemy_treasure,
+			{
+				direction : image_angle,
+				image_angle : 90,
+			});
 		}
 }

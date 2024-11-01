@@ -28,7 +28,7 @@ direction = random(360);
 
  if enemy_life == 1
 {
-	sprite_index = spr_boat_enemy1_2;
+	sprite_index = spr_boat_treasure_1;
 
 }
 
@@ -60,21 +60,28 @@ else if enemy_life == 0
 				if (irandom(1) == 1)
 				{
 					instance_create_layer(x, y, "Instances", obj_ferret);
+					instance_create_layer(x + 10, y + 10, "Instances", obj_ferret);
 				} else if (irandom(10) >= 9)
 			{
 				instance_create_layer(x, y, "Instances", obj_coin_gold);
+				instance_create_layer(x + 10, y + 10, "Instances", obj_coin_gold);
 			} 
 			else 
 			{	
+				instance_create_layer(x - 10, y - 10, "Instances", obj_coin_silver);
 				instance_create_layer(x, y, "Instances", obj_coin_silver);
+				instance_create_layer(x + 10, y + 10, "Instances", obj_coin_silver);
 			} 
 		} else if (irandom(10) >= 9)
 			{
 				instance_create_layer(x, y, "Instances", obj_coin_gold);
+				instance_create_layer(x + 10, y + 10, "Instances", obj_coin_gold);
 			} 
 		else 
 		{	
-			instance_create_layer(x, y, "Instances", obj_coin_silver);
+				instance_create_layer(x - 10, y - 10, "Instances", obj_coin_silver);
+				instance_create_layer(x, y, "Instances", obj_coin_silver);
+				instance_create_layer(x + 10, y + 10, "Instances", obj_coin_silver);
 		}
 	}
 	else if (obj_game.level == 3)
@@ -84,18 +91,23 @@ else if enemy_life == 0
 				if irandom(3) == 1
 				{
 					instance_create_layer(x, y, "Instances", obj_ferret);
+					instance_create_layer(x + 10, y + 10, "Instances", obj_ferret);
 				} else if (irandom(10) >= 8)
 			{
 				instance_create_layer(x, y, "Instances", obj_emerald);
+				instance_create_layer(x + 10, y + 10, "Instances", obj_emerald);
 			} 
 			else if (irandom(10) >= 6)
 			{	
 				instance_create_layer(x, y, "Instances", obj_coin_gold);
+				instance_create_layer(x + 10, y + 10, "Instances", obj_coin_gold);
 			}
 		}
 		else 
 		{
-			instance_create_layer(x, y, "Instances", obj_coin_silver);
+				instance_create_layer(x - 10, y - 10, "Instances", obj_coin_silver);
+				instance_create_layer(x, y, "Instances", obj_coin_silver);
+				instance_create_layer(x + 10, y + 10, "Instances", obj_coin_silver);
 		}
 		
 	}

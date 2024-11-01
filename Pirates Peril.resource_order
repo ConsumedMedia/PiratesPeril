@@ -1,4 +1,8 @@
 {
   "FolderOrderSettings":[],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_enemy_treasure","order":1,"path":"objects/obj_enemy_treasure/obj_enemy_treasure.yy",},
+    {"name":"spr_boat_treasure_1","order":2,"path":"sprites/spr_boat_treasure_1/spr_boat_treasure_1.yy",},
+    {"name":"spr_boat_treasure","order":1,"path":"sprites/spr_boat_treasure/spr_boat_treasure.yy",},
+  ],
 }
