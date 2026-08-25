@@ -1,1 +1,1 @@
-text_y = y;
+instance_destroy();

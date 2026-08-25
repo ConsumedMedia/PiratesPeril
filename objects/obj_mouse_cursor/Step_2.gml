@@ -16,7 +16,7 @@ y = clamp(y, view_yview, view_yview+view_hview);
 
 }
 */
-if gamepad_is_connected(global.gamepad) 
+if PPInputHasGamepad()
 {
 	
 	if (room == rm_game) && (obj_game.paused == false)

@@ -1,0 +1,1 @@
+SteamServiceHandleAsync(async_load);

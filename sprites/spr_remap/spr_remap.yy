@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Shooter",
-    "path":"Shooter.yyp",
+    "path":"Pirates Peril.yyp",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

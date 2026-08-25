@@ -1,28 +1,5 @@
 y = ystart;
-if ((room == rm_game) && (obj_game.paused == false)) || (room == rm_store) 
-{
-	exit;
-}
-else 
-{
-
-// btn sound FX check if on
-if sound_fx_off == false
-{
-	audio_play_sound(snd_btn, 1, false);
-}
-if (image_index == 0)
-{
-	image_index = 1;
-	sound_fx_off = true;
-	
-	
-}
- else if (image_index == 1)
- {
-	
-	 image_index = 0;
-	 sound_fx_off = false;
-	
- }  
-}
+sound_fx_off = !sound_fx_off;
+image_index = sound_fx_off ? 1 : 0;
+global.pp_progression.settings.sfx_enabled = !sound_fx_off;
+SaveGame();

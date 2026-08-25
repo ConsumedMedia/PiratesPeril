@@ -54,7 +54,7 @@ if (text_alarm == 1) {
 
 if (text_alarm > 1) text_alarm--;
 
-if (new_page && (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(global.gamepad, gp_face1))){
+if (new_page && PPInputConfirmPressed()){
 	str = "";
 	text_alarm = text_alarm_set;
 	new_page = false;

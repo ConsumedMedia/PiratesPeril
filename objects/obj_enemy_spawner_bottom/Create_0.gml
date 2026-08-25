@@ -1,4 +1,1 @@
-alarm[0] = random(450);
-
-direction = image_angle;
-speed = 10;
+alarm[0] = irandom_range(60, RunDirectorSpawnDelay(obj_game.points));

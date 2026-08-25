@@ -1,11 +1,2 @@
-/// @description player collect emerald
-
+obj_game.run_coins += 5;
 instance_destroy(other);
-obj_game.coins += 5;
-
-
-
-
-
-
-

@@ -22,7 +22,7 @@ if (y > room_height) y = room_height;
 //}
 
  
- if gamepad_is_connected(global.gamepad) 
+if PPInputHasGamepad()
 {
 var xaxis = gamepad_axis_value(global.gamepad, gp_axislh);
 var yaxis = gamepad_axis_value(global.gamepad, gp_axislv);
@@ -55,7 +55,7 @@ if obj_game.paused == false
 	{
 		image_index = 2;
 	}
-	if obj_store.player_cursor == 3
+	if obj_store.player_cursor >= 3
 	{
 		image_index = 3;
 	}

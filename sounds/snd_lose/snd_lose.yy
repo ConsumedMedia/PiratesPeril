@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_lose.wav",
+  "soundFile":"snd_lose.ogg",
   "type":0,
   "volume":1.0,
 }

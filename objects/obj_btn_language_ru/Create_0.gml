@@ -1,1 +1,1 @@
-text_y = y;
+event_inherited();

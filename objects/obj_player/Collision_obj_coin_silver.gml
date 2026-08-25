@@ -1,12 +1,2 @@
-/// @description player collect silver coin
-
-
+obj_game.run_coins += 1;
 instance_destroy(other);
-obj_game.coins += 1;
-
-
-
-
-
-
-

@@ -1,22 +1,12 @@
-/// @description Insert description here
-
 event_inherited();
+if (!obj_btn_sound_fx.sound_fx_off) audio_play_sound(snd_btn, 1, false);
 
-if obj_btn_sound_fx.sound_fx_off == false
-{
-	audio_play_sound(snd_btn, 1, false);
-}
-// show help text
 if (instance_exists(obj_highscore))
 {
-	instance_destroy(obj_highscore);
-} 
-else 
+    instance_destroy(obj_highscore);
+}
+else
 {
-	if (instance_exists(obj_controls))
-	{	
-		instance_destroy(obj_controls);
-	}
-	instance_create_layer(room_width / 2, room_height - 120, "Instances", obj_highscore);
-	
+    SteamServiceRequestLeaderboard();
+    instance_create_layer(room_width / 2, 610, "Instances", obj_highscore);
 }

@@ -1,11 +1,9 @@
 powerup = 0;
 cooldown = false;
-my_speed = 2 + obj_store.ship_speed;
-dir = 0;
-//target_angle = 0;
-
-offset_x = 0;
-offset_y = 0;
-
-previous_x = 0;
-previous_y = 0;
+invulnerability = 0;
+my_speed = 2 + global.pp_progression.upgrades.speed_tier;
+coll = false;
+previous_x = x;
+previous_y = y;
+image_blend = c_white;
+image_alpha = 1;

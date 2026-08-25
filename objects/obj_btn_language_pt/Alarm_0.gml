@@ -1,11 +1,4 @@
-/// @description set lang to portuguese
-
 event_inherited();
-
-if obj_btn_sound_fx.sound_fx_off == false
-{
-	audio_play_sound(snd_btn, 1, false);
-}
-//lang_set("pt");
-obj_game.selected_lang = "pt";
-lang_set(obj_game.selected_lang);
+global.pp_progression.settings.sfx_enabled = !global.pp_progression.settings.sfx_enabled;
+if (instance_exists(obj_btn_sound_fx)) obj_btn_sound_fx.sound_fx_off = !global.pp_progression.settings.sfx_enabled;
+SaveGame();

@@ -18,3 +18,5 @@ player_cursor_0 = true;
 player_cursor_1 = false;
 player_cursor_2 = false;
 player_cursor_3 = false;
+
+if (variable_global_exists("pp_progression")) ProgressionApplyToInstances();

@@ -5,7 +5,7 @@
   "option_linux_allow_fullscreen":true,
   "option_linux_disable_sandbox":false,
   "option_linux_display_cursor":true,
-  "option_linux_display_name":"Pirate's Peril",
+  "option_linux_display_name":"Pirates Peril",
   "option_linux_display_splash":true,
   "option_linux_enable_steam":false,
   "option_linux_homepage":"https://consumedmedia.net",

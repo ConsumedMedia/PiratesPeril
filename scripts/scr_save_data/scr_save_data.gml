@@ -1,36 +1,33 @@
-// SAVE GAME script
+/// Versioned, atomic local save. Steam Auto-Cloud should sync savedgame.save.
+
+#macro PP_SAVE_FILE "savedgame.save"
+#macro PP_SAVE_TEMP "savedgame.tmp"
+#macro PP_SAVE_BACKUP "savedgame.bak"
+
 function SaveGame()
 {
-	global.points = obj_game.points;
-//make save array
-var _saveData = array_create(0);
-//for every instance, create a struct and add it to the array
-with (obj_game)
-{
-	//if (obj_game.points > highscore)
-	//{
-		
-		highscore = global.points;
-		saved_coins = coins;
-		
-		var _saveEntity = 
-		{
-			highscore : highscore,
-			saved_coins : saved_coins,
-			selected_lang : selected_lang,
-			//seen_thor : seen_thor,
-			//collected_ferrets : collected_ferrets,
-			//thor : thor,
-		}
-	//}
-	array_push(_saveData, _saveEntity);
-}
-//turn all this data into a JSON string and save it via a buffer
-var _string = json_stringify(_saveData);
-var _buffer = buffer_create(string_byte_length(_string) +1, buffer_fixed, 1);
-buffer_write(_buffer, buffer_string, _string);
-buffer_save(_buffer, "savedgame.save");
-buffer_delete(_buffer);
+    if (!variable_global_exists("pp_progression")) return false;
 
-//show_debug_message("Game Saved! " + _string);
+    global.pp_progression.schema_version = PP_SAVE_SCHEMA;
+    var _json = json_stringify(global.pp_progression);
+    var _buffer = buffer_create(string_byte_length(_json) + 1, buffer_fixed, 1);
+    buffer_write(_buffer, buffer_string, _json);
+    buffer_save(_buffer, PP_SAVE_TEMP);
+    buffer_delete(_buffer);
+
+    if (file_exists(PP_SAVE_BACKUP)) file_delete(PP_SAVE_BACKUP);
+    if (file_exists(PP_SAVE_FILE)) file_copy(PP_SAVE_FILE, PP_SAVE_BACKUP);
+    if (file_exists(PP_SAVE_FILE)) file_delete(PP_SAVE_FILE);
+    file_rename(PP_SAVE_TEMP, PP_SAVE_FILE);
+    return file_exists(PP_SAVE_FILE);
+}
+
+function DeleteSaveGame()
+{
+    if (file_exists(PP_SAVE_FILE)) file_delete(PP_SAVE_FILE);
+    if (file_exists(PP_SAVE_TEMP)) file_delete(PP_SAVE_TEMP);
+    if (file_exists(PP_SAVE_BACKUP)) file_delete(PP_SAVE_BACKUP);
+    global.pp_progression = ProgressionDefaults();
+    ProgressionApplyToInstances();
+    return true;
 }

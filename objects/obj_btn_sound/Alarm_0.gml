@@ -1,31 +1,13 @@
 y = ystart;
-if ((room == rm_game) && (obj_game.paused == false)) || (room == rm_store) 
+global.pp_progression.settings.music_enabled = !global.pp_progression.settings.music_enabled;
+if (global.pp_progression.settings.music_enabled)
 {
-	exit;
+    image_index = 0;
+    if (!audio_is_playing(snd_pirate_shooter_loop)) audio_play_sound(snd_pirate_shooter_loop, 0, true);
 }
-else 
+else
 {
-
-// btn sound FX check if on
-if (obj_btn_sound_fx.sound_fx_off == false)
-{
-	audio_play_sound(snd_btn, 1, false);
+    image_index = 1;
+    audio_stop_sound(snd_pirate_shooter_loop);
 }
-
-
-// selection of btn image based on on or off
-if (image_index == 0)
-{
-	image_index = 1;
-	audio_stop_sound(snd_pirate_shooter_loop);
-}
- else if (image_index == 1)
- {
-	
-if !audio_is_playing(snd_pirate_shooter_loop) 
-{	
-	audio_play_sound(snd_pirate_shooter_loop, 0, true);
-}
-	 image_index = 0;
- }
-}
+SaveGame();

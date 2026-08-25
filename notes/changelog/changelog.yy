@@ -3,8 +3,8 @@
   "%Name":"changelog",
   "name":"changelog",
   "parent":{
-    "name":"Shooter",
-    "path":"Shooter.yyp",
+    "name":"Pirates Peril",
+    "path":"Pirates Peril.yyp",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

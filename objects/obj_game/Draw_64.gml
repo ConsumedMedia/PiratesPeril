@@ -1,122 +1,61 @@
-/// @description draw GUI IF player object exists
-if instance_exists(obj_player)
-//if (room == rm_game)
-{
-	draw_text_transformed(10, 10, lang("Score") + ": " + string(points), 1, 1, 0);
-	//draw_text_transformed(10, 40, "Health: " + string(player_health), .5, .5, 1);
-	draw_text_transformed(10, 40, lang("Health") + ": ", 1, 1, 0);
-	
-	
-	// drawing the heart sprites
-	/// once i build out the store, i will have to figure out how to dynamically add more lives IF purchased
-	if player_health == 1 
-	{
-		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
-		
-		//show_debug_message("Player Health = " + string(player_health));
-		
-	}
-	else if player_health == 2
-	{
-		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 160, 50, 1, 1, 1, c_white, 1);
-		
-		//show_debug_message("Player Health = " + string(player_health));
-		
-	}
-	else if player_health == 3
-	{
-		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 160, 50, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 180, 50, 1, 1, 1, c_white, 1);
-		
-		//show_debug_message("Player Health = " + string(player_health));
-		
-	}
-	else if player_health == 4
-	{
-		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 160, 50, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 180, 50, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 200, 50, 1, 1, 1, c_white, 1);
-		
-		//show_debug_message("Player Health = " + string(player_health));
-	}
-	else if player_health == 5
-	{
-		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 160, 50, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 180, 50, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 200, 50, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 220, 50, 1, 1, 1, c_white, 1);
-		
-		//show_debug_message("Player Health = " + string(player_health));
-	}
-	else if player_health == 6
-	{
-		draw_sprite_ext(spr_heart, 0, 140, 50, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 160, 50, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 180, 50, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 200, 50, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 220, 50, 1, 1, 1, c_white, 1);
-		draw_sprite_ext(spr_heart, 0, 240, 50, 1, 1, 1, c_white, 1);
-		
-		//show_debug_message("Player Health = " + string(player_health));
-	}
-	else if player_health >= 6
-	{
-		player_health = 6;
-	}
-	
-	//temp position place this in the main menu / menu died
-	if variable_instance_exists(id, "highscore")
-	{
-		draw_text_transformed(10, 70, lang("High Score") + ": " + string(highscore), 1, 1, 0);
-	}
-	
-	if variable_instance_exists(id, "coins")
-	{
-		draw_text_transformed(10, 100, lang("Coins") + ": " + string(coins), 1, 1, 0);
-	}
-	if variable_instance_exists(id, "level")
-	{
-		draw_text_transformed(10, 130, "Reputation" + ": " + string(level), 1, 1, 0);
-	}
-	if seen_thor == 1
-	{
-		draw_text_transformed(10, 160, "Ferrets" + ": " + string(collected_ferrets), 1, 1, 0);
-	}
-}
-	
-	if (room == rm_store)
-	{
-		draw_text_transformed(270, 50, lang("Plunderer's Port"), 1, 1, 0);
-		draw_text_transformed(250, 120, lang("Stock up for yer travels"), .75, .75, 0);
-		//show_debug_message("store title");
-	}
-	
-	if (room == rm_languages)
-	{
-		draw_text_transformed_color(300, 150, lang("Language") , 1.5, 1.5, 0, c_black, c_black, c_black, c_black,1);
-		
-	}
+draw_set_font(fnt_game);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
 
-//code to draw the pause menu
-if (paused == true)
+if (instance_exists(obj_player))
 {
-	//draw_set_color(c_black);
-	//draw_set_alpha(0.60);
-	//draw_set_font(fnt_game);
-	if gamepad_is_connected(global.gamepad)
-	{
-		draw_text(270, 200, "Paused");
-		draw_text_transformed(180, 250, "Press 'Start' to Continue", .5, .5, 0);
-	}
-	else 
-	{
-		draw_text(270, 200, lang("paused"));
-		//draw_text(270, 200, "Paused");
-		//draw_text_transformed(180, 250, "Press 'ESC' to Continue", .5, .5, 0);
-		draw_text_transformed(180, 250, lang("press 'esc' to continue"), .5, .5, 0);
-	}
+    draw_text(10, 10, "SCORE: " + string(points));
+    draw_text(10, 40, "HEALTH:");
+    for (var i = 0; i < player_health; i++)
+    {
+        draw_sprite(spr_heart, 0, 140 + (i * 20), 50);
+    }
+    draw_text(10, 70, "HIGH SCORE: " + string(highscore));
+    draw_text(10, 100, "RUN COINS: " + string(run_coins));
+    draw_text(10, 130, "REPUTATION: " + string(level));
+
+    if (global.pp_progression.quest.active || global.pp_progression.quest.complete)
+    {
+        draw_text(10, 160, "FERRETS: " + string(global.pp_progression.quest.rescued)
+            + "/" + string(PP_FERRET_TARGET));
+    }
+}
+
+if (room == rm_store)
+{
+    draw_set_halign(fa_center);
+    draw_text(400, 50, "PLUNDERER'S PORT");
+    draw_text_transformed(400, 120, "STOCK UP FOR YER TRAVELS", 0.75, 0.75, 0);
+    draw_set_halign(fa_left);
+    draw_text(10, 10, "BANKED COINS: " + string(global.pp_progression.banked_coins));
+}
+
+if (room == rm_languages)
+{
+    draw_set_halign(fa_center);
+    draw_text(400, 150, "SETTINGS");
+    draw_set_halign(fa_left);
+}
+
+if (room == rm_menu_died)
+{
+    draw_set_halign(fa_center);
+    draw_text(400, 70, global.pp_new_high_score ? "NEW HIGH SCORE!" : "RUN COMPLETE");
+    draw_text_transformed(400, 110, "SCORE: " + string(global.pp_last_run_score), 0.75, 0.75, 0);
+    draw_text_transformed(400, 140, "RUN COINS: " + string(global.pp_last_run_coins)
+        + "   BANKED: " + string(global.pp_last_banked_coins), 0.5, 0.5, 0);
+    if (global.pp_progression.quest.active || global.pp_progression.quest.complete)
+    {
+        draw_text_transformed(400, 165, "FERRETS: " + string(global.pp_progression.quest.rescued)
+            + "/" + string(PP_FERRET_TARGET), 0.5, 0.5, 0);
+    }
+    draw_set_halign(fa_left);
+}
+
+if (paused)
+{
+    draw_set_halign(fa_center);
+    draw_text(400, 250, "PAUSED");
+    draw_text_transformed(400, 300, "PRESS ESC OR START TO CONTINUE", 0.5, 0.5, 0);
+    draw_set_halign(fa_left);
 }

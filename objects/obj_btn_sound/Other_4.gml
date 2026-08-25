@@ -1,6 +1,5 @@
-/// @description check to see if music is already playing or if sound was selected off
-
-if !audio_is_playing(snd_pirate_shooter_loop) && (image_index == 0) 
-{	
-	audio_play_sound(snd_pirate_shooter_loop, 0, true);
+if (global.pp_progression.settings.music_enabled && !audio_is_playing(snd_pirate_shooter_loop))
+{
+    audio_play_sound(snd_pirate_shooter_loop, 0, true);
 }
+image_index = global.pp_progression.settings.music_enabled ? 0 : 1;
