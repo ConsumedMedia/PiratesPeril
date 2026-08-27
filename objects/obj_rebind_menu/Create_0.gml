@@ -3,7 +3,12 @@ labels = ["MOVE UP", "MOVE DOWN", "MOVE LEFT", "MOVE RIGHT", "FIRE", "PAUSE", "C
 selected = 0;
 global.pp_rebind_message = "SELECT AN ACTION AND PRESS CONFIRM";
 
+// Keep the controls screen inside the 800x800 safe area.
+row_start = 195;
+row_gap = 45;
+
 with (obj_blank_key_up) instance_destroy();
 with (obj_blank_key_down) instance_destroy();
 with (obj_blank_key_left) instance_destroy();
 with (obj_blank_key_right) instance_destroy();
+with (obj_textbox) instance_destroy();

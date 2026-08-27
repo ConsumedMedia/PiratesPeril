@@ -9,7 +9,11 @@ if (keyboard_check_pressed(vk_f11))
 }
 
 if (room == rm_game && PPInputPausePressed()) PPPauseToggle();
-if (paused) exit;
+if (paused)
+{
+    PPPauseMenuUpdate();
+    exit;
+}
 
 powerup_time -= delta_time / 1000000;
 level = RunDirectorReputation(points);

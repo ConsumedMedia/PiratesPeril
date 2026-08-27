@@ -39,23 +39,34 @@ y = clamp(y, view_yview, view_yview+view_hview);
 
 }
 
-if obj_game.paused == false
+var _game_paused = instance_exists(obj_game) ? obj_game.paused : false;
+var _cursor_index = 0;
+if (variable_global_exists("pp_progression"))
 {
-	if obj_store.player_cursor == 0
+	_cursor_index = global.pp_progression.cosmetics.selected;
+}
+else if (instance_exists(obj_store))
+{
+	_cursor_index = obj_store.player_cursor;
+}
+
+if (!_game_paused)
+{
+	if (_cursor_index == 0)
 	{
 		image_index = 0;
 	}
 
-	if obj_store.player_cursor == 1
+	if (_cursor_index == 1)
 	{
 		image_index = 1;
 	}
 
-	if obj_store.player_cursor == 2
+	if (_cursor_index == 2)
 	{
 		image_index = 2;
 	}
-	if obj_store.player_cursor >= 3
+	if (_cursor_index >= 3)
 	{
 		image_index = 3;
 	}

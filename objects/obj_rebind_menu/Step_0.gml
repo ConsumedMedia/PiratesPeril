@@ -11,8 +11,10 @@ if (keyboard_check_pressed(vk_down) || (PPInputHasGamepad() && gamepad_button_ch
 
 if (mouse_check_button_pressed(mb_left))
 {
-    var _row = floor((device_mouse_y_to_gui(0) - 190) / 52);
-    if (_row >= 0 && _row < array_length(actions))
+    var _mouse_y = device_mouse_y_to_gui(0);
+    var _row = round((_mouse_y - row_start) / row_gap);
+    if (_row >= 0 && _row < array_length(actions)
+        && abs(_mouse_y - (row_start + _row * row_gap)) <= 20)
     {
         selected = _row;
         PPInputBeginRebind(actions[selected]);

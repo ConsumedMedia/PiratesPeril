@@ -11,6 +11,9 @@ powerup_time = 10;
 level = 1;
 last_level = 1;
 paused = false;
+pause_surface = -1;
+pause_menu_selected = 0;
+pause_menu_labels = ["CONTINUE", "MAIN MENU", "QUIT"];
 
 wind = false;
 wind_direction = 0;
